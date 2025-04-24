@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* @font-face {
+  font-family: wedding;
+  src: url('../fonts/weddingtext-regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: cambria;
+  src: url('../fonts/cambria.ttf') format('truetype');
+} */
+:root {
+  --color1: #919191;
+  --color2: #f7ed6a;
+  
+  --color3: #9C0A12;
+  --color4: #e0021b;
+  --color4: #022237;
+  --color5: #f6f6f6;
+  --color6: #262626;
+  --color7: #fff;
+  --color8: #A37C0D;
+  --color9: #1ab69d;
+  --color10: #00d6d3;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+p {
+  font-family: "Rubik", sans-serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.crop {
+  object-fit: cover;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.separador {
+  background: var(--color2);
+  width: 60px;
+  height: 4px;
+}
+
+/* #header {
+  -moz-box-shadow: 0 3px 3px rgba(190, 190, 190, 0.75);
+  -webkit-box-shadow: 0 3px 3px rgba(190, 190, 190, 0.75);
+  box-shadow: 0 3px 3px rgba(190, 190, 190, 0.75);
+} */
+
+#header .barsup {
+  font-size: 13px;
+  padding: 0 7%;
+  background-color: var(--color2);
+}
+
+#header .barsup a {
+  color: black;
+}
+
+#header .barsup a:hover {
+  color: black;
+}
+
+#header .barsup .mininav .mininav-item {
+  padding: 12px;
+}
+
+#header .barsup .mininav .mininav-item:hover {
+  background: var(--color4);
+}
+
+#header .barsup .mininav .intranet {
+  background: var(--color2);
+}
+
+#header .barsup .mininav .intranet:hover {
+  background: var(--color10);
+  color: black;
+}
+
+#header .barsup .mininav .mininav-item a {
+  color: black;
+}
+
+#header .barsup .contact .contact-item {
+  padding: 10px;
+}
+
+#header .barsup .contact .contact-item a:hover {
+  color: var(--color1);
+}
+
+#header .barsup .idioma {
+  padding: 10px 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  border-left: 1px solid #fff;
+  margin-left: 18px;
+}
+
+#header .barsup .idioma .esp-flag {
+  content: "";
+  background: url(../img/icons/spanish-flag.png);
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-left: 15px;
+  vertical-align: text-bottom;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#header nav.navbar {
+  background-color: white;
+  /* background-color: transparent; */
+  background-size: 100%;
+}
+
+#header .logo {
+  height: 120px;
+}
+
+#header .title {
+  color: var(--color1);
+  font-family: "wedding";
+  font-weight: none;
+  font-size: 2rem;
+}
+
+#header ul.nav-item {
+  margin: 0 12px;
+}
+
+#header a.nav-link {
+  font-size: 17px;
+  letter-spacing: 1px;
+  /* text-transform: lowercase; */
+  font-weight: 700;
+  color: var(--color6);
+}
+
+
+/* #header a.nav-item-menu:hover { */
+#header .navbar-nav .nav_efect:hover {
+  color: var(--color4);
+  border-bottom: 3px solid var(--color4);
+}
+
+#header .navbar-nav li.admision {
+  border: 2px solid var(--color4);
+  border-radius: 24px;
+  color: var(--color6);
+}
+
+#header .navbar-nav .admision:hover {
+  color: var(--color4);
+}
+
+#header a.dropdown-item {
+  color: var(--color6);
+  font-size: 14px;
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  font-weight: 600;
+  transition: ease-in-out 0.5s;
+}
+#header a.dropdown-item:hover {
+  background-color: rgba(252, 205, 42, 0.1);
+  color: var(--color8);
+  transform: translateX(5px);
+}
+#list-menu {
+  
+  transition: ease-in-out 0.5s;
+}
+#list-menu:hover{
+  border-left: solid 8px var(--color8);
+  
+}
+
+#header .dropdown-item:focus,
+.dropdown-item:hover {
+  color: var(--color4);
+  background-color: var(--color7);
+}
+
+/* #header .dropdown-item.active, .dropdown-item:active {
+  color: var(--color2);
+  text-decoration: none;
+} */
+#footer {
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 100%,
+      #ffff 10%,
+      #ffff 50%
+    ),
+    url("http://localhost/jean/public/img/web/footer.jpg");
+  background-size: cover !important;
+  background-position: center 30%;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+#footer .redes .title {
+  color: #a2a1a1;
+}
+
+#footer .redes a {
+  color: var(--color7);
+  margin-left: 12px;
+}
+
+#footer .redes a:hover {
+  color: var(--color2);
+  margin-left: 12px;
+}
+
+#footer #dates .date-info h5 {
+  color: var(--color7);
+  margin-bottom: 25px;
+}
+
+#footer #dates .date-info p {
+  color: #a2a1a1;
+}
+
+#footer .barinf {
+  background: var(--color1);
+  padding: 30px 0;
+  color: var(--color7);
+}
+
+@media screen and (max-width: 500px) {
+  #header .barsup .mininav .mininav-item a span {
+    display: none;
+  }
+
+  #header .logo {
+    height: 80px;
+  }
+
+  #header .title {
+    font-size: 0.8rem;
+  }
+
+  #footer #dates .date-info .correo {
+    font-size: 14px;
+  }
+
+  #footer #dates .date-info {
+    text-align: center;
+  }
+}
