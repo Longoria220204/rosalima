@@ -205,6 +205,63 @@
             padding-top: 5rem;
             padding-bottom: 5rem;
         }
+        #valores  .owl-theme .owl-dots .owl-dot span {
+            width: 30px;
+        }
+
+        #valores  .owl-theme .owl-dots .owl-dot.active span {
+            /* background-color: red; */
+            width: 50px;
+        }
+
+        #valores  .owl-theme .owl-dots .owl-dot.active span,
+        #valores  .owl-theme .owl-dots .owl-dot:hover span {
+            background-color: var(--color8);
+        }
+
+        #valores  .owl-nav button {
+            background: var(--color4) !important;
+            /* Color del fondo del botón */
+            border: none !important;
+            /* Quita el borde */
+            color: white !important;
+            /* Color del texto */
+            /*  padding: 10px !important; */
+            /* Espacio interno del botón */
+            border-radius: 50% !important;
+            /* Hace el botón circular */
+            position: absolute !important;
+            /* Posiciona el botón de manera absoluta */
+            top: 50% !important;
+            /* Centra verticalmente el botón */
+            transform: translateY(-50%) !important;
+            /* Ajusta la posición vertical */
+            width: 45px !important;
+            height: 45px !important;
+        }
+
+        #valores .owl-nav span {
+            font-size: 1.8rem;
+        }
+
+        #valores .owl-nav .owl-prev {
+            left: -25px !important;
+            /* Ajusta la posición horizontal del botón izquierdo */
+        }
+
+        #valores .owl-nav .owl-next {
+            right: -25px !important;
+            /* Ajusta la posición horizontal del botón derecho */
+        }
+
+        #valores .owl-nav button:hover {
+            background: #445d9c !important;
+            /* Color de fondo del botón al pasar el mouse */
+        }
+
+        #valores .owl-dots {
+            display: block !important;
+        }
 
         /* eSTILOS */
         .tf__single_category {
@@ -1375,7 +1432,7 @@
             loop: true,
             margin: 50,
             nav: false,
-            dots: false,
+            dots: true,
             autoplay: true,
             autoplayTimeout: 7000,
             responsive: {

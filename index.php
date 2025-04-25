@@ -74,13 +74,14 @@
             top: 10%;
             left: 0;
             animation: banner_animi_1 4s linear infinite alternate;
+            z-index: 99;
             /* -webkit-animation: banner_animi_1 4s linear infinite alternate; */
         }
 
         #img-elemento1 img {
             width: 45%;
             opacity: .5;
-
+            display: block;
         }
 
         #header nav.navbar {
@@ -89,21 +90,21 @@
             background-size: 100%;
         }
 
-        #valores .valores_slider .owl-theme .owl-dots .owl-dot span {
+        #valores .owl-theme .owl-dots .owl-dot span {
             width: 30px;
         }
 
-        #valores.valores_slider .owl-theme .owl-dots .owl-dot.active span {
+        #valores .owl-theme .owl-dots .owl-dot.active span {
             /* background-color: red; */
             width: 50px;
         }
 
-        #valores .valores_slider .owl-theme .owl-dots .owl-dot.active span,
-        #valoress .valores_slider .owl-theme .owl-dots .owl-dot:hover span {
+        #valores .owl-theme .owl-dots .owl-dot.active span,
+        #valores .owl-theme .owl-dots .owl-dot:hover span {
             background-color: var(--color8);
         }
 
-        #valores .valores_slider .owl-nav button {
+        #valores .owl-nav button {
             background: var(--color4) !important;
             /* Color del fondo del botón */
             border: none !important;
@@ -122,6 +123,29 @@
             /* Ajusta la posición vertical */
             width: 45px !important;
             height: 45px !important;
+        }
+
+        #valores .owl-nav span {
+            font-size: 1.8rem;
+        }
+
+        #valores .owl-nav .owl-prev {
+            left: -25px !important;
+            /* Ajusta la posición horizontal del botón izquierdo */
+        }
+
+        #valores .owl-nav .owl-next {
+            right: -25px !important;
+            /* Ajusta la posición horizontal del botón derecho */
+        }
+
+        #valores .owl-nav button:hover {
+            background: #445d9c !important;
+            /* Color de fondo del botón al pasar el mouse */
+        }
+
+        #valores .owl-dots {
+            display: block !important;
         }
 
         @keyframes banner_animi_1 {
@@ -460,7 +484,7 @@
         #bienvenidos .img-icon-bienvenido {
             position: absolute;
             bottom: -10%;
-            left: 15%;
+            left: 20%;
             -webkit-animation: about_animi_1 40s linear infinite;
             /*  animation: about_ani_1 40s linear infinite; */
         }
@@ -873,7 +897,7 @@
                         <div class="titleC overlay">
                             <div>
                                 <h2 class="title">¡Bienvenidos al colegio<br>
-                                    <span style="color:var(--color3);text-decoration: underline;">Rosa de Lima!</span>
+                                    <span style="color:var(--color3);text-decoration: underline;">Jean Piaget!</span>
                                 </h2>
                                 <br>
                                 <p class="parrafo-slider">
@@ -888,7 +912,7 @@
                                 </div>
                             </div>
                         </div>
-                        <img id="banner-web" src="./public/img/banner/banner_jeanv3.png" class="w-100">
+                        <img id="banner-web" src="./public/img/banner/banner1.jpg" class="w-100">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
@@ -924,10 +948,10 @@
                     </div>
                 </div>
                 <div class="col-lg-6 pt-5 px-5 d-flex justify-content-center" style="position:relative;">
-                    <img src="./public/img/web/rosa_inicio.jpg" style="width:80%;z-index:99" alt="">
+                    <img src="./public/img/web/rosa_inicio.png" style="width:80%;z-index:99" alt="">
                     <div style="right:20%; bottom:1%; position:absolute;background-color: var(--color4);padding:1rem;z-index:99;border-radius:15px;">
                         <center><i style="color:white;font-size:1.8rem;" class="far fa-check-circle"></i></center>
-                        <h4 style="color:white;"><span>+49 años</span></h4>
+                        <h4 style="color:white;"><span>+36 años</span></h4>
                     </div>
                     <img width="80" style="position:absolute;top:-1%;right:15%;z-index:1; animation: banner_animi_2 2s linear infinite alternate;" src="./public/img/icons/miselanea1.png" alt="">
                     <img width="80" style="position:absolute;left:5%;bottom:15%;;z-index:1;animation: banner_animi_2 2s linear infinite alternate;" src="./public/img/icons/miselanea2.png" alt="">
