@@ -958,7 +958,7 @@
                             <i style="color:var(--color8);" class="fas fa-long-arrow-right"></i>
                         </a>
                         <img class="img-bg-niveles" src="./public/img/icons/miselanea3.png" alt="">
-                        <img class="img-niveles" src="./public/img/web/nivel_inicial.jpg" alt="">
+                        <img class="img-niveles" src="./public/img/web/pi_iniicial.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4 px-4 py-5">

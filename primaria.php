@@ -35,11 +35,73 @@
     <script src="./public/js/bootstrap.pooper.js"></script>
     <script src="./public/js/vue.min.js"></script>
     <style>
-        /* estilos del banner dinámico */
         #portada {
-            margin-top: -8rem;
-            padding-bottom: 5rem;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+                url('./public/img/web/banner_primaria.jpg');
+            background-size: cover;
+            background-position: center 30%;
+            /*   padding: 550px 0 10px; */
+            position: relative;
         }
+
+        #portada .page_title {
+            font-size: 50px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        #portada .breadcrumb-item+.breadcrumb-item::before {
+            color: white;
+        }
+
+        #portada .breadcrumb-item {
+            font-size: 22px;
+        }
+
+        #portada .breadcrumb-item a {
+            color: #fff;
+            font-size: 22px;
+        }
+
+        #portada {
+            height: 600px;
+            padding-bottom: 1rem;
+        }
+
+        #portada .content-portada {
+            position: absolute;
+            bottom: 15%;
+            left: 8%;
+            color: white;
+        }
+
+        /* estilos del banner dinámico */
+        /* #portada {
+            position: relative;
+        } */
+
+        /* #portada img {
+            width: 100%;
+            object-fit: cover;
+            object-position: bottom;
+        }
+ */
+        /* #portada .content-portada {
+            position: absolute;
+            bottom: 30%;
+            left: 10%;
+        }
+
+        #portada .breadcrumb-item a {
+            font-weight: 700;
+            color: var(--color6);
+
+        }
+
+        #portada h1 {
+            font-size: 3rem;
+        } */
+
 
         #banner-web {
             height: 106vh;
@@ -387,17 +449,16 @@
             /* position: relative; */
             background-image: url('./public/img/web/fondo2.png');
             background-repeat: no-repeat;
-            background-size: 100% 900px;
-           /*  padding-top: 8rem;
-            padding-bottom: 5rem; */
+            background-size: 160% ;
+            /*  padding-top: 8rem;*/
             position: relative;
+            padding-bottom: 8rem!important;
+            margin-bottom: 3rem;
         }
 
         #bienvenidos p {
             text-align: justify;
-            height: 4rem;
         }
-
         /* #bienvenidos .img-icon-bienvenido {
             position: absolute;
             top: -1%;
@@ -838,15 +899,9 @@
             object-position: bottom;
         }
 
-        #portada .content-portada {
-            position: absolute;
-            bottom: 30%;
-            left: 10%;
-        }
-
         #portada .breadcrumb-item a {
             font-weight: 700;
-            color: var(--color6);
+            color: white;
 
         }
 
@@ -964,33 +1019,33 @@
     </style>
     <?php include_once './partials/header.php'; ?>
 
-    <section id="portada">
-        <img src="./public/img/web/banner_primaria.jpg" width="100%" alt="">
-
-    </section>
-    <section id="bienvenidos">
-        <div class="container">
-            <div class="content-bienvenidos">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="tf__breadcrumb_text">
-                                <h1>Primaria</h1>
-                                <div class="page_breadcrumb">
-                                    <nav aria-label="breadcrumb">
-                                        <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a href="./">Inicio</a></li>
-                                            <li class="breadcrumb-item" style="color:var(--color4);font-weight:700;">Niveles</li>
-                                        </ol>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
+    <!-- <section id="portada">
+        <img src="./public/img/web/banner_primaria.jpg" alt="">
+    </section> -->
+    <div class="container-fluid" id="portada">
+        <div class="container content-portada">
+            <div class="row">
+                <div class="col-12 animate__animated animate__fadeInLeft">
+                    <h2 class="page_title">PRIMARIA</h2>
+                    <div class="page_breadcrumb">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
+                                <li class="breadcrumb-item text-white">Niveles</li>
+                            </ol>
+                        </nav>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <section id="bienvenidos">
+        <div class="container" >
             <div class="row">
                 <div class="d-felx justify-content-center">
+                    <div class="pt-5">
+                        <h2>Nivel Primaria</h2>
+                    </div>
                     <!--  <img class="img-icon-bienvenido" src="./public/img/icons/miselanea3.png" alt=""> -->
                     <div class="pt-5">
                         <h3>Propuesta Pedagógica para el Nivel Primaria</h3>
@@ -1003,11 +1058,9 @@
                     <div class="row">
                         <p>La propuesta pedagógica para el nivel Primaria de nuestra institución busca responder a las necesidades educativas de los estudiantes, garantizando un aprendizaje significativo, contextualizado y alineado con el Currículo Nacional de la Educación Básica. Este enfoque promueve el desarrollo integral del estudiante, potenciando sus capacidades cognitivas, emocionales, sociales y físicas.</p>
                     </div>
-                    <br><br><br>
                     <div class="row">
-                        <div class="col-lg col-md-5 my-auto pt-4 " id="info">
+                        <div class="col-lg col-md-5 pt-4 " id="info">
                             <div class="accordion" id="accordionPanelsStayOpenExample">
-
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                                         <button class="accordion-button d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
@@ -1146,27 +1199,21 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-center pt-4">
-                                <img src="./public/img/icons/elemento2.png" width="100" style="animation: banner_animi_2 2s linear infinite alternate;" alt="">
-                            </div>
                         </div>
                     </div>
-                    <!-- <div style="border-radius:50%;">
-                        <img src="./public/img/web/pi-primaria.jpg" style="width:90%;z-index:99;border-radius:50%;" alt="">
-                    </div> -->
-                    <!-- <div>
-                        <video src="./public/video-web/interno-primaria.mp4" controls autoplay width="70%" muted style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); border-radius: 8px;"></video>
-                    </div> -->
-
                 </div>
-                <div class="col-lg-6 pt-5 px-5 d-flex justify-content-center">
+                <div class="col-lg-6 pt-5 px-5 ">
                     <div class="mx-5">
-                        <img src="./public/img/web/foto_primaria.jpg" alt="" width="140%" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);border-radius: 2px;">
+                        <div class="d-flex justify-content-center">
+                            <img src="./public/img/web/foto_primaria.jpg" alt="" width="100%" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);border-radius: 2px;">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center pt-5">
+                        <img src="./public/img/icons/elemento2.png" width="100" style="animation: banner_animi_2 2s linear infinite alternate;" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <br><br><br>
     </section>
     <section id="valores" class="tf__categories mt_95">
         <div class="container">

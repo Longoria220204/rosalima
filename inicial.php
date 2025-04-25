@@ -28,9 +28,49 @@
     <script src="./public/js/vue.min.js"></script>
     <style>
         /* estilos del banner dinámico */
-        #portada {
+        /* #portada {
             margin-top: -8rem;
             padding-bottom: 2rem;
+        }
+ */
+        #portada {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+                url('./public/img/web/banner_inicial.jpg');
+            background-size: cover;
+            background-position: center 30%;
+            /*   padding: 550px 0 10px; */
+            position: relative;
+        }
+
+        #portada .page_title {
+            font-size: 50px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        #portada .breadcrumb-item+.breadcrumb-item::before {
+            color: white;
+        }
+
+        #portada .breadcrumb-item {
+            font-size: 22px;
+        }
+
+        #portada .breadcrumb-item a {
+            color: #fff;
+            font-size: 22px;
+        }
+
+        #portada {
+            height: 600px;
+            padding-bottom: 1rem;
+        }
+
+        #portada .content-portada {
+            position: absolute;
+            bottom: 15%;
+            left: 8%;
+            color: white;
         }
 
         #banner-web {
@@ -371,13 +411,15 @@
         }
 
         #bienvenidos {
-            position: relative;
+            /* position: relative; */
             background-image: url('./public/img/web/fondo2.png');
             background-repeat: no-repeat;
-            background-size: 100% 900px;
-            padding-top: 8rem;
-            padding-bottom: 5rem;
+            background-size: 140%;
+            background-position: bottom;
+            /*  padding-top: 8rem;*/
             position: relative;
+            padding-bottom: 8rem !important;
+            margin-bottom: 3rem;
         }
 
         #bienvenidos p {
@@ -717,21 +759,9 @@
             position: relative;
         }
 
-        #portada img {
-            height: 100%;
-            object-fit: cover;
-            object-position: bottom;
-        }
-
-        #portada .content-portada {
-            position: absolute;
-            bottom: 30%;
-            left: 10%;
-        }
-
         #portada .breadcrumb-item a {
             font-weight: 700;
-            color: var(--color6);
+            color: white;
 
         }
 
@@ -830,23 +860,42 @@
     </style>
     <?php include_once './partials/header.php'; ?>
 
-    <section id="portada">
+    <!--     <section id="portada">
         <img src="./public/img/web/banner_inicial.jpg" width="100%" alt="">
 
     </section>
+
+ -->
+    <div class="container-fluid" id="portada">
+        <div class="container content-portada">
+            <div class="row">
+                <div class="col-12 animate__animated animate__fadeInLeft">
+                    <h2 class="page_title">INICIAL</h2>
+                    <div class="page_breadcrumb">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
+                                <li class="breadcrumb-item text-white">Niveles</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <section id="bienvenidos">
         <div class="container">
-            <div class="content-bienvenidos">
+            <!-- <div class="content-bienvenidos">
                 <div class="container">
                     <div class="row">
-                        <div class="d-felx justify-content-center pt-5">
+                        <div class="d-flex justify-content-center pt-5">
                             <div class="col-12">
                                 <div class="tf__breadcrumb_text">
                                     <h1>Inicial</h1>
                                     <div class="page_breadcrumb">
                                         <nav aria-label="breadcrumb">
                                             <ol class="breadcrumb">
-                                                <li class="breadcrumb-item"><a href="./">Inicio</a></li>
+                                                <li class="breadcrumb-item" ><a href="./" style="color:var(--color4);">Inicio</a></li>
                                                 <li class="breadcrumb-item" style="color:var(--color4);font-weight:700;">Niveles</li>
                                             </ol>
                                         </nav>
@@ -856,10 +905,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="row">
                 <div class="d-felx justify-content-center pt-5">
                     <!-- <img class="img-icon-bienvenido" src="./public/img/icons/miselanea3.png" alt="">   -->
+                    <div class="pt-5 ">
+                        <h2>Nivel Inicial</h2>
+                    </div>
                     <div class="pt-5 ">
                         <h3>Propuesta Pedagógica para el Nivel Inicial</h3>
                     </div>
@@ -875,68 +927,77 @@
 
                         <!-- <video src="./public/video-web/interno_inicial.mp4" controls autoplay width="50%" muted style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); border-radius: 8px;"></video> -->
                     </div>
+                    <div class="row">
+                        <div class="col-lg col-md my-auto" id="info">
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                        <button class="accordion-button d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                            1.- Integración de las Áreas Curriculares
+                                            <i class="fas fa-chevron-down ms-auto"></i>
+                                        </button>
+
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                                        <div class="accordion-body">
+
+                                            <p>Las áreas de Psicomotricidad, Matemática, Comunicación, Personal Social, Ciencia y Tecnología y Formación Religiosa se abordarán de manera integrada, promoviendo el desarrollo de capacidades de investigación y toma de decisiones en los estudiantes. Esta estrategia estará orientada a temas contextualizados en la problemática del entorno, como el cuidado del medioambiente, la salud y el desarrollo de valores.</p>
+                                            <p>Fomentaremos la participación activa de los estudiantes en la construcción de sus aprendizajes.
+                                                Involucraremos a los padres de familia como aliados clave en el proceso educativo, promoviendo su acompañamiento en el aprendizaje de sus hijos e hijas.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                        <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                            2.- Desarrollo de la Psicomotricidad Fina
+                                            <i class="fas fa-chevron-down ms-auto"></i>
+                                        </button>
+
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                        <div class="accordion-body">
+                                            <p>Potenciaremos las habilidades motoras finas a través de la manipulación de materiales concretos. Esta práctica se integrará de manera constante en todas las áreas curriculares, favoreciendo la coordinación y precisión en los estudiantes.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                        <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                            3.- El Juego como Herramienta Pedagógica
+                                            <i class="fas fa-chevron-down ms-auto"></i>
+                                        </button>
+
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingthree">
+                                        <div class="accordion-body">
+                                            <p> Incorporaremos el juego de forma permanente en las actividades pedagógicas, proponiendo situaciones de aprendizaje motivadoras que estimulen: </p>
+                                            <p><b>Creatividad:</b> Exploración y generación de ideas originales.
+                                                Autonomía: Desarrollo de la capacidad de resolver problemas de manera independiente.
+                                            </p>
+                                            <p><b>Autonomía:</b> Desarrollo de la capacidad de resolver problemas de manera independiente.</p>
+                                            <p><b>Cooperación y trabajo en equipo: </b> Creación de espacios para la interacción y colaboración entre los estudiantes.</p>
+                                            <p><b>Asimilación de normas y valores:</b> Aprendizaje dinámico y divertido que refuerce principios como el respeto, la solidaridad y la responsabilidad.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-            <div class="col-lg-6 col-md-5 my-auto" id="info">
-                    <div class="accordion" id="accordionPanelsStayOpenExample">
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                <button class="accordion-button d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                    1.- Integración de las Áreas Curriculares
-                                    <i class="fas fa-chevron-down ms-auto"></i>
-                                </button>
-
-                            </h2>
-                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-                                <div class="accordion-body">
-
-                                    <p>Las áreas de Psicomotricidad, Matemática, Comunicación, Personal Social, Ciencia y Tecnología y Formación Religiosa se abordarán de manera integrada, promoviendo el desarrollo de capacidades de investigación y toma de decisiones en los estudiantes. Esta estrategia estará orientada a temas contextualizados en la problemática del entorno, como el cuidado del medioambiente, la salud y el desarrollo de valores.</p>
-                                    <p>Fomentaremos la participación activa de los estudiantes en la construcción de sus aprendizajes.
-                                        Involucraremos a los padres de familia como aliados clave en el proceso educativo, promoviendo su acompañamiento en el aprendizaje de sus hijos e hijas.
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                    2.- Desarrollo de la Psicomotricidad Fina
-                                    <i class="fas fa-chevron-down ms-auto"></i>
-                                </button>
-
-                            </h2>
-                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                                <div class="accordion-body">
-                                    <p>Potenciaremos las habilidades motoras finas a través de la manipulación de materiales concretos. Esta práctica se integrará de manera constante en todas las áreas curriculares, favoreciendo la coordinación y precisión en los estudiantes.
-
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                                <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                    3.- El Juego como Herramienta Pedagógica
-                                    <i class="fas fa-chevron-down ms-auto"></i>
-                                </button>
-
-                            </h2>
-                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingthree">
-                                <div class="accordion-body">
-                                    <p> Incorporaremos el juego de forma permanente en las actividades pedagógicas, proponiendo situaciones de aprendizaje motivadoras que estimulen: </p>
-                                    <p><b>Creatividad:</b> Exploración y generación de ideas originales.
-                                        Autonomía: Desarrollo de la capacidad de resolver problemas de manera independiente.
-                                    </p>
-                                    <p><b>Autonomía:</b> Desarrollo de la capacidad de resolver problemas de manera independiente.</p>
-                                    <p><b>Cooperación y trabajo en equipo: </b> Creación de espacios para la interacción y colaboración entre los estudiantes.</p>
-                                    <p><b>Asimilación de normas y valores:</b> Aprendizaje dinámico y divertido que refuerce principios como el respeto, la solidaridad y la responsabilidad.
-                                    </p>
-                                </div>
-                            </div>
+                <div class="col-lg-6 pt-5 px-5 ">
+                    <div class="mx-5">
+                        <div class="d-flex justify-content-center">
+                            <img src="./public/img/web/rosa_inicial.jpg" alt="" width="100%" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);border-radius: 2px;">
                         </div>
                     </div>
                     <div class="d-flex justify-content-center pt-5">
@@ -945,70 +1006,193 @@
                 </div>
 
             </div>
-            </div>
-            
-            
+
+
         </div>
         <!-- <img class="img-icon-bienvenido" src="./public/img/icons/miselanea3.png" alt=""> -->
     </section>
-    <!-- <section id="valores" class="tf__categories mt_95">
+    <section id="valores" class="tf__categories mt_95">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-xl-6 col-md-8 col-lg-6 m-auto wow fadeInUp">
                     <div class="tf__heading_area mb_15 text-center">
-                        <h2>Valores Institucionales</h2>
+                        <h2>Valores</h2>
                     </div>
                 </div>
             </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-xl-4 col-md-6 wow fadeInUp">
-                    <div class="tf__single_category blue">
-                        <div class="tf__single_category_icon"><i class="fas fa-users"></i></div>
-                        <div class="tf__single_category_text">
-                            <h3>Fraternidad</h3>
-                            <p>Fomentamos el compañerismo en escolar.</p>
+            <!-- <div class="row d-flex justify-content-center"> -->
+            <div class="row cursos_content_slider owl-carousel owl-theme">
+                <div class="valores_slider">
+                    <div class="content-valores-curso">
+                        <div class=" wow fadeInUp">
+                            <div class="tf__single_category light_blue">
+                                <div class="tf__single_category_icon"><i class="far fa-american-sign-language-interpreting"></i></div>
+                                <div class="tf__single_category_text">
+                                    <h3>Oración</h3>
+                                    <p>Fuente de espiritualidad y conexión con Dios.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 wow fadeInUp">
-                    <div class="tf__single_category orange">
-                        <div class="tf__single_category_icon"><i class="fas fa-heart"></i></div>
-                        <div class="tf__single_category_text">
-                            <h3>Amor</h3>
-                            <p>Promovemos un ambiente de afecto y comprensión.</p>
+                <div class="valores_slider">
+                    <div class="content-valores-curso">
+                        <div class=" wow fadeInUp">
+                            <div class="tf__single_category orange">
+                                <div class="tf__single_category_icon"><i class="fas fa-balance-scale"></i></div>
+                                <div class="tf__single_category_text">
+                                    <h3>Estudio</h3>
+                                    <p>Desarrollo de habilidades y capacidades cognitivas.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 wow fadeInUp">
-                    <div class="tf__single_category red">
-                        <div class="tf__single_category_icon"><i class="fas fa-balance-scale"></i></div>
-                        <div class="tf__single_category_text">
-                            <h3>Justicia</h3>
-                            <p>Actuamos con respeto y equidad hacia todos.</p>
+                <div class="valores_slider">
+                    <div class="content-valores-curso">
+                        <div class=" wow fadeInUp">
+                            <div class="tf__single_category light_blue">
+                                <div class="tf__single_category_icon"><i class="fas fa-hands-helping"></i>
+                                </div>
+                                <div class="tf__single_category_text">
+                                    <h3>Verdad</h3>
+                                    <p>Transparencia y honestidad en palabras y acciones.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 wow fadeInUp">
-                    <div class="tf__single_category gray">
-                        <div class="tf__single_category_icon"><i class="fa fa-book"></i></div>
-                        <div class="tf__single_category_text">
-                            <h3>Responsabilidad</h3>
-                            <p>Formamos estudiantes responsables y comprometidos.</p>
+                <div class="valores_slider">
+                    <div class="content-valores-curso">
+                        <div class="wow fadeInUp">
+                            <div class="tf__single_category gray">
+                                <div class="tf__single_category_icon"><i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="tf__single_category_text">
+                                    <h3>Respeto</h3>
+                                    <p>Aprecio y valoración de cada miembro de la comunidad educativa.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 wow fadeInUp">
-                    <div class="tf__single_category light_blue">
-                        <div class="tf__single_category_icon"><i class="fas fa-handshake"></i></div>
-                        <div class="tf__single_category_text">
-                            <h3>Respeto</h3>
-                            <p>Valoramos la diversidad y las opiniones de cada persona.</p>
+                <div class="valores_slider">
+                    <div class="content-valores-curso">
+                        <div class="wow fadeInUp">
+                            <div class="tf__single_category light_blue">
+                                <div class="tf__single_category_icon"><i class="fas fa-landmark"></i>
+                                </div>
+                                <div class="tf__single_category_text">
+                                    <h3>Puntualidad</h3>
+                                    <p>Gestión eficiente del tiempo y las prioridades.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="valores_slider">
+                    <div class="content-valores-curso">
+                        <div class="wow fadeInUp">
+                            <div class="tf__single_category gray">
+                                <div class="tf__single_category_icon"><i class="fas fa-globe"></i>
+                                    </i></div>
+                                <div class="tf__single_category_text">
+                                    <h3>Responsabilidad</h3>
+                                    <p>Compromiso con el bien común y los objetivos institucionales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="valores_slider">
+                    <div class="content-valores-curso">
+                        <div class=" wow fadeInUp">
+                            <div class="tf__single_category orange">
+                                <div class="tf__single_category_icon"><i class="fas fa-recycle"></i>
+                                </div>
+                                <div class="tf__single_category_text">
+                                    <h3>Perseverancia</h3>
+                                    <p>Constancia para superar obstáculos y alcanzar metas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="valores_slider">
+                    <div class="content-valores-curso">
+                        <div class="wow fadeInUp">
+                            <div class="tf__single_category gray">
+                                <div class="tf__single_category_icon"><i class="fas fa-rocket"></i>
+
+                                </div>
+                                <div class="tf__single_category_text">
+                                    <h3>Creatividad</h3>
+                                    <p>Innovación en la búsqueda de soluciones.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="valores_slider">
+                    <div class="content-valores-curso">
+                        <div class=" wow fadeInUp">
+                            <div class="tf__single_category orange">
+                                <div class="tf__single_category_icon"><i class="fas fa-balance-scale"></i></div>
+                                <div class="tf__single_category_text">
+                                    <h3>Amistad</h3>
+                                    <p>Fomento de relaciones profundas y constructivas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="valores_slider">
+                    <div class="content-valores-curso">
+                        <div class=" wow fadeInUp">
+                            <div class="tf__single_category light_blue">
+                                <div class="tf__single_category_icon"><i class="fas fa-hands-helping"></i>
+                                </div>
+                                <div class="tf__single_category_text">
+                                    <h3>Solidaridad</h3>
+                                    <p>Apoyo mutuo y cuidado del entorno.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="valores_slider">
+                    <div class="content-valores-curso">
+                        <div class="wow fadeInUp">
+                            <div class="tf__single_category gray">
+                                <div class="tf__single_category_icon"><i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="tf__single_category_text">
+                                    <h3>Caridad</h3>
+                                    <p>Humildad y disposición para ayudar a los demás.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="valores_slider">
+                    <div class="content-valores-curso">
+                        <div class="wow fadeInUp">
+                            <div class="tf__single_category light_blue">
+                                <div class="tf__single_category_icon"><i class="fas fa-landmark"></i>
+                                </div>
+                                <div class="tf__single_category_text">
+                                    <h3>Empatía</h3>
+                                    <p>Comprensión y conexión con los sentimientos de los otros.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- </div> -->
         </div>
-    </section> -->
+        </div>
+    </section>
     <!-- <section id="niveles">
         <div class="container-fluid">
             <div class="row">
@@ -1179,5 +1363,29 @@
                 items: 3
             }
         }
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        $(".cursos_content_slider").owlCarousel({
+            loop: true,
+            margin: 50,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 7000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                }
+            },
+            navText: ["&#10094;", "&#10095;"] // Flechas personalizadas (← y →)
+        });
     });
 </script>
