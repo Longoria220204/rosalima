@@ -449,16 +449,17 @@
             /* position: relative; */
             background-image: url('./public/img/web/fondo2.png');
             background-repeat: no-repeat;
-            background-size: 160% ;
+            background-size: 160%;
             /*  padding-top: 8rem;*/
             position: relative;
-            padding-bottom: 8rem!important;
+            padding-bottom: 8rem !important;
             margin-bottom: 3rem;
         }
 
         #bienvenidos p {
             text-align: justify;
         }
+
         /* #bienvenidos .img-icon-bienvenido {
             position: absolute;
             top: -1%;
@@ -558,7 +559,8 @@
         }
 
         #valores {
-            padding-top: 2rem;
+            padding-top: 6rem;
+            
         }
 
         #niveles h3 {
@@ -662,7 +664,7 @@
                     #ffff 10%,
                     #ffff 50%),
                 url("http://localhost/jean/public/img/web/fachada.jpg"); */
-            background: url('./public/img/web/fondo_aliados.png');
+            background: url('./public/img/web/fondo-cursos.jpg');
             background-size: cover !important;
             background-position: center;
             padding: 10px;
@@ -817,7 +819,8 @@
             border: 1px solid #ddd;
             background: var(--color7);
             text-align: center;
-            padding: 40px;
+            padding-top: 30px;
+            padding-bottom: 30px;
             border-top-right-radius: 70px;
             border-bottom-left-radius: 70px;
             margin-top: 25px;
@@ -847,10 +850,14 @@
 
         .content1 img {
 
-            width: 40% !important;
+            width: 25% !important;
         }
 
-        .item:hover .content1::after {
+        .content1 h3 {
+            padding-top: 2rem !important;
+        }
+
+        /* .item:hover .content1::after {
             position: absolute;
             content: "";
             width: 85%;
@@ -860,10 +867,10 @@
             border-bottom-left-radius: 70px;
             top: 22%;
             left: 8%;
-        }
+        } */
 
         .item:hover .content1 {
-            background-color: var(--color8);
+            background-color: var(--color2);
 
         }
 
@@ -1040,7 +1047,7 @@
         </div>
     </div>
     <section id="bienvenidos">
-        <div class="container" >
+        <div class="container">
             <div class="row">
                 <div class="d-felx justify-content-center">
                     <div class="pt-5">
@@ -1211,6 +1218,144 @@
                     <div class="d-flex justify-content-center pt-5">
                         <img src="./public/img/icons/elemento2.png" width="100" style="animation: banner_animi_2 2s linear infinite alternate;" alt="">
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- <section id="niveles">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg">
+                    <h2 style="color:var(--color6);text-align:center;">Nuestros Niveles</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" style="padding-top: 10rem;">
+            <div class="row">
+                <div class="col-lg-4 px-4 py-5">
+                    <div class="content-valores h-100" style="background-color: var(--color8);">
+                        <h3>Nivel Inicial</h3>
+                        <p>Fomentamos la autonomía y las habilidades comunicativas de los estudiantes a través de experiencias de aprendizaje significativas y materiales manipulables.</p>
+                        <a href="#">
+                            <i style="color:var(--color8);" class="fas fa-long-arrow-right"></i>
+                        </a>
+                        <img class="img-bg-niveles" src="./public/img/icons/miselanea3.png" alt="">
+                        <img class="img-niveles" src="./public/img/web/p-inicial.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 px-4 py-5">
+                    <div class="content-valores h-100" style="background-color: var(--color3);">
+                        <h3>Nivel Primaria</h3>
+                        <p>Promover un aprendizaje dinámico y personalizado mediante metodologías innovadoras que respondan a las necesidades de cada grupo de estudiantes.</p>
+                        <a href="#">
+                            <i style="color:var(--color3);" class="fas fa-long-arrow-right"></i>
+                        </a>
+                        <img class="img-bg-niveles" src="./public/img/icons/miselanea3.png" alt="">
+                        <img class="img-niveles" src="./public/img/web/p-primaria.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 px-4 py-5">
+                    <div class="content-valores h-100" style="background-color: var(--color4);">
+                        <h3>Nivel Secundaria</h3>
+                        <p>El nivel secundario tiene como objetivo formar integralmente al estudiante para la vida social, el trabajo, los estudios superiores y la ciudadanía.</p>
+                        <a href="#">
+                            <i style="color:var(--color4);" class="fas fa-long-arrow-right"></i>
+                        </a>
+                        <img class="img-bg-niveles" src="./public/img/icons/miselanea3.png" alt="">
+                        <img class="img-niveles" src="./public/img/web/p-secundaria.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section> -->
+
+
+
+    <section id="publicaciones">
+        <div class="container-fluid " style="padding-left: 4%;padding-right:4%;">
+            <div class="row">
+                <div class="col-lg">
+                    <h2>Listado de Cursos</h2>
+                </div>
+            </div>
+            <br>
+            <div class="row noticias">
+                <div class="owl-carousel owl-theme" id="owl-noticias">
+                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item ">
+                        <div class="content1">
+                            <center><img src="./public/img/icons/personalsocial.png" alt=""></center>
+                            <h3>Personal Social</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
+                        <div class="content1 ">
+                            <center><img src="./public/img/icons/comunicacion.png" alt=""></center>
+                            <h3>Comunicación</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
+                        <div class="content1 ">
+                            <center><img src="./public/img/icons/plan-lector.png" alt=""></center>
+                            <h3> Plan Lector</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
+                        <div class="content1">
+                            <center><img src="./public/img/icons/matematica.png" alt=""></center>
+                            <h3>Matemática</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
+                        <div class="content1">
+                            <center><img src="./public/img/icons/ciencia-tecnologia.png" alt=""></center>
+                            <h3>Ciencia y Tecnología</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
+                        <div class="content1">
+                            <center><img src="./public/img/icons/educacion-religiosa.png" alt=""></center>
+                            <h3>Formación Religiosa</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
+                        <div class="content1">
+                            <center><img src="./public/img/icons/arte.png" alt=""></center>
+                            <h3>Arte</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
+                        <div class="content1">
+                            <center><img src="./public/img/icons/musica.png" alt=""></center>
+                            <h3>Música</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
+                        <div class="content1">
+                            <center><img src="./public/img/icons/educacion-fisica.png" alt=""></center>
+                            <h3>Ed.Fisica</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
+                        <div class="content1">
+                            <center><img src="./public/img/icons/tennis-mesa.png" alt=""></center>
+                            <h3>Tenis Mesa</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
+                        <div class="content1">
+                            <center><img src="./public/img/icons/informatica.png" alt=""></center>
+                            <h3>Informática</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
+                        <div class="content1">
+                            <center><img src="./public/img/icons/ingles.png" alt=""></center>
+                            <h3>Inglés</h3>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -1397,129 +1542,6 @@
         </div>
         </div>
     </section>
-    <!-- <section id="niveles">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg">
-                    <h2 style="color:var(--color6);text-align:center;">Nuestros Niveles</h2>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid" style="padding-top: 10rem;">
-            <div class="row">
-                <div class="col-lg-4 px-4 py-5">
-                    <div class="content-valores h-100" style="background-color: var(--color8);">
-                        <h3>Nivel Inicial</h3>
-                        <p>Fomentamos la autonomía y las habilidades comunicativas de los estudiantes a través de experiencias de aprendizaje significativas y materiales manipulables.</p>
-                        <a href="#">
-                            <i style="color:var(--color8);" class="fas fa-long-arrow-right"></i>
-                        </a>
-                        <img class="img-bg-niveles" src="./public/img/icons/miselanea3.png" alt="">
-                        <img class="img-niveles" src="./public/img/web/p-inicial.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4 px-4 py-5">
-                    <div class="content-valores h-100" style="background-color: var(--color3);">
-                        <h3>Nivel Primaria</h3>
-                        <p>Promover un aprendizaje dinámico y personalizado mediante metodologías innovadoras que respondan a las necesidades de cada grupo de estudiantes.</p>
-                        <a href="#">
-                            <i style="color:var(--color3);" class="fas fa-long-arrow-right"></i>
-                        </a>
-                        <img class="img-bg-niveles" src="./public/img/icons/miselanea3.png" alt="">
-                        <img class="img-niveles" src="./public/img/web/p-primaria.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4 px-4 py-5">
-                    <div class="content-valores h-100" style="background-color: var(--color4);">
-                        <h3>Nivel Secundaria</h3>
-                        <p>El nivel secundario tiene como objetivo formar integralmente al estudiante para la vida social, el trabajo, los estudios superiores y la ciudadanía.</p>
-                        <a href="#">
-                            <i style="color:var(--color4);" class="fas fa-long-arrow-right"></i>
-                        </a>
-                        <img class="img-bg-niveles" src="./public/img/icons/miselanea3.png" alt="">
-                        <img class="img-niveles" src="./public/img/web/p-secundaria.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section> -->
-
-
-
-    <section id="publicaciones">
-        <div class="container-fluid " style="padding-left: 4%;padding-right:4%;">
-            <div class="row">
-                <div class="col-lg">
-                    <h2>Listado de Cursos</h2>
-                </div>
-            </div>
-            <br>
-            <div class="row noticias">
-                <div class="owl-carousel owl-theme" id="owl-noticias">
-                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item ">
-                        <div class="content1">
-                            <!-- <center><img src="./public/img/icons/logo_ps.png" alt=""></center> -->
-                            <h3>Personal Social</h3>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
-                        <div class="content1 ">
-                            <!-- <center><img src="./public/img/icons/logo_pl.png" alt=""></center> -->
-                            <h3>Comunicación | Plan Lector</h3>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
-                        <div class="content1">
-                            <!-- <center><img src="./public/img/icons/logo-cayetano.png" alt=""></center> -->
-                            <h3>Matemática</h3>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
-                        <div class="content1">
-                            <!-- <center><img src="./public/img/icons/logo-cientifica.png" alt=""></center> -->
-                            <h3>Ciencia y Tecnología</h3>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
-                        <div class="content1">
-                            <!-- <center><img src="./public/img/icons/logo-usil.png" alt=""></center> -->
-                            <h3>Formación Religiosa</h3>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
-                        <div class="content1">
-                            <!-- <center><img src="./public/img/icons/logo-continental.png" alt=""></center> -->
-                            <h3>Arte/Música</h3>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
-                        <div class="content1">
-                            <!-- <center><img src="./public/img/icons/logo-continental.png" alt=""></center> -->
-                            <h3>Ed.Fisica/Tenis Mesa</h3>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
-                        <div class="content1">
-                            <!-- <center><img src="./public/img/icons/logo-continental.png" alt=""></center> -->
-                            <h3>Informática</h3>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
-                        <div class="content1">
-                            <!-- <center><img src="./public/img/icons/logo-continental.png" alt=""></center> -->
-                            <h3>Inglés</h3>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <br>
-    <br>
-    <br>
     <!-- <section id="convenios">
         <div class="container-fluid">
             <div class="row">
@@ -1584,7 +1606,7 @@
             loop: true,
             margin: 50,
             nav: false,
-            dots: true,
+            dots: false,
             autoplay: true,
             autoplayTimeout: 7000,
             responsive: {

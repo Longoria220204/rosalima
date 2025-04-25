@@ -26,8 +26,8 @@
     <style>
         /* estilos del banner dinámico */
         #portada {
-            margin-top: -8rem;
-            padding-bottom: 5rem;
+           /*  margin-top: -8rem; */
+            padding-bottom: 3rem;
         }
 
         #banner-web {
@@ -372,7 +372,7 @@
             background-repeat: no-repeat;
             background-size: 100% 600px;  */
             padding-top: 3rem;
-            /* padding-bottom: 1rem; */
+            padding-bottom: 3rem;
             position: relative;
         }
 
@@ -662,106 +662,51 @@
     </section>
     <section id="bienvenidos">
         <div class="container">
-            <div class="row">
-                <div class="content-bienvenidos">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="tf__breadcrumb_text">
-                                    <h1>Pastoral Familiar </h1>
-                                    <div class="page_breadcrumb">
-                                        <nav aria-label="breadcrumb">
-                                            <ol class="breadcrumb">
-                                                <li class="breadcrumb-item"><a href="./">Inicio</a></li>
-                                                <li class="breadcrumb-item" style="color:var(--color4);font-weight:700;">Pastoral Familiar</li>
-                                            </ol>
-                                        </nav>
-                                    </div>
-                                </div>
+        <div class="content-bienvenidos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tf__breadcrumb_text">
+                            <h1>Pastoral Familiar</h1>
+                            <div class="page_breadcrumb">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="./">Inicio</a></li>
+                                        <li class="breadcrumb-item" style="color:var(--color4);font-weight:700;">Pastoral Familiar</li>
+                                    </ol>
+                                </nav>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
         <img class="img-icon-bienvenido" src="./public/img/icons/miselanea4.png" alt="">
-    </section>
-    <section id="publicaciones">
+
         <div class="container-fluid " style="padding-left: 4%;padding-right:4%;">
-            <!--  <div class="row">
-                <div class="col-lg">
-                    <h2 style="color:var(--color6);text-align:center;">Publicaciones</h2>
+           <div class="row">
+                <div class="col-lg-6 pt-4 px-5">
+                    <p>Para este año 2025 nuestro proyecto en familia <b>“Creciendo en fe”</b> que tiene como objetivo fortalecer la fe y los valores en nuestras familias, inspirándonos en el carisma dominico, y teniendo como guía a nuestro Padre Santo Domingo de Guzmán, que promueve la búsqueda de la verdad, la justicia y el servicio a los demás.</p>
+                    <p>
+                    Iniciamos el 2 de mayo y el programa consta de 8 encuentros.
+                    </p>
                 </div>
-            </div> -->
-            <br>
-            <div class="row noticias">
-                <div class="owl-carousel owl-theme" id="owl-noticias">
-                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
-                        <a href="view?id=1">
-                            <div class="card shadow" style="border-radius:5px;">
-                                <div class="card1">
-                                    <img src="./public/img/galeria/p-reglamento.jpg" alt="">
-                                </div>
-                                <div class="cardbody1 mx-3 py-3">
-                                    <div class="fecha-pub pb-1 d-flex justify-content-between">
-                                        <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Documentos</span></div>
-                                        <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;04-11-2024</p>
-                                    </div>
-                                    <br>
-                                    <div class="titulo">
-                                        <h5>Reglamento Interno</h5>
-                                    </div>
-                                    <div class="detalle">
-                                        <p>La I.E.P. JEAN PIAGET es un centro educativo que surge a iniciativa de la Sra. Miriam Zegarra A. y Prof. Guillermo
-                                            Tapia Zegarra habiendo observado la necesidad de escuelas privadas en el distrito y que tengan una visión que
-                                            este a la vanguardia de lo que la sociedad requería. </p>
-                                    </div>
-
-                                </div>
-                                <div class="card-footer">
-                                    <div class="pub-leer-mas">
-                                        <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                <div class="col-lg-6 pt-5 px-5 d-flex justify-content-center" style="position:relative;">
+                    <div style="z-index:99;">
+                        <center><img src="./public/img/web/.jpg" alt=""></center>
                     </div>
-                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
-                        <a href="view?id=2">
-                            <div class="card shadow" style="border-radius:5px;">
-                                <div class="card1">
-                                    <img src="./public/img/galeria/p-convenio.jpg" alt="">
-                                </div>
-                                <div class="cardbody1 mx-3 py-3">
-                                    <div class="fecha-pub pb-1 d-flex justify-content-between">
-                                        <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Documentos</span></div>
-                                        <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;04-11-2024</p>
-                                    </div>
-                                    <br>
-                                    <div class="titulo">
-                                        <h5>Convenio - CPSEDU2024</h5>
-                                    </div>
-                                    <div class="detalle">
-                                        <p>Convenio de Prestación de Servicios Educativo 2024 - CPSEDU2024
-                                            El Colegio “JEAN PIAGET”, es una institución Educativa Privada, constituida legalmente, con
-                                            RUC N° 20600133943, ubicada en Calle Las Orquídeas 100 A, Urb. Santa Isabel,
-                                        </p>
-                                    </div>
-
-                                </div>
-                                <div class="card-footer">
-                                    <div class="pub-leer-mas">
-                                        <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
+                    <!--  <img src="./public/img/web/b-nosotros1.png" style="width:90%;z-index:99" alt=""> -->
+                    <!--  <div style="right:20%; bottom:1%; position:absolute;background-color: var(--color4);padding:1rem;z-index:99;border-radius:15px;">
+                        <center><i style="color:white;font-size:1.8rem;" class="far fa-check-circle"></i></center>
+                        <h4 style="color:white;"><span>+49 años</span></h4>
+                    </div> -->
+                    <!-- <img width="80" style="position:absolute;top:-2%;right:15%;z-index:1; animation: banner_animi_2 2s linear infinite alternate;" src="./public/img/icons/miselanea1.png" alt="">
+                    <img width="80" style="position:absolute;left:14%;bottom:15%;;z-index:1;animation: banner_animi_2 2s linear infinite alternate;" src="./public/img/icons/miselanea2.png" alt="">
+                </div> -->
             </div>
         </div>
-    </section>
+    </section> 
     <br>
     <br>
     <br>

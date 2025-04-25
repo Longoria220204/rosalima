@@ -656,8 +656,9 @@
         .card {
             padding: 2.5rem;
             /* background-color:rgba(0, 0, 0, 0.8) ; */
-            background-color: rgba(0, 2, 0, .4);
+            /* background-color: rgba(0, 2, 0, .4); */
         }
+
 
         #input-formulario {
             display: block;
@@ -783,51 +784,48 @@
 
         #form-portada .img-icon-bienvenido {
             position: absolute;
-            top:-3%;
+            top: -3%;
             left: 0;
 
-           
+
         }
     </style>
     <?php include_once './partials/header.php'; ?>
     <section id="portada">
         <img src="./public/img/web/portada-nosotros.png" width="100%" alt="">
-        <div class="content-portada">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="tf__breadcrumb_text">
-                            <h1>Admisión</h1>
-                            <div class="page_breadcrumb">
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="./">Inicio</a></li>
-                                        <li class="breadcrumb-item" style="color:var(--color4);font-weight:700;">Admisión</li>
-                                    </ol>
-                                </nav>
+
+    </section>
+    <section id="publicaciones">
+        <div class="container-fluid " style="padding-left: 4%;padding-right:4%;">
+            <div class="content-portada">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="tf__breadcrumb_text">
+                                <h1>Admisión</h1>
+                                <div class="page_breadcrumb">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="./">Inicio</a></li>
+                                            <li class="breadcrumb-item" style="color:var(--color4);font-weight:700;">Admisión</li>
+                                        </ol>
+                                    </nav>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="publicaciones">
-        <div class="container-fluid " style="padding-left: 4%;padding-right:4%;">
-            <!--  <div class="row">
-                <div class="col-lg">
-                    <h2 style="color:var(--color6);text-align:center;">Publicaciones</h2>
-                </div>
-            </div> -->
             <br>
             <div class="row noticias">
-                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
-                        <a href="view?id=1">
-                            <div class="card shadow" style="border-radius:5px;">
-                                <div class="card1">
-                                    <img src="./public/img/galeria/p-reglamento.jpg" alt="">
-                                </div>
-                                <div class="cardbody1 mx-3 py-3">
+                <div class="col-12 col-md-4 p-md-4 my-3 my-md-0 item">
+                    <a href="view?id=1">
+                        <div class="card shadow" style="border-radius:30px;">
+                            <div class="card1">
+                                <img src="./public/img/galeria/p-reglamento.jpg" alt="">
+                            </div>
+                            <div class="cardbody1 mx-3 py-3">
+                            
                                     <div class="fecha-pub pb-1 d-flex justify-content-between">
                                         <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Documentos</span></div>
                                         <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;04-11-2024</p>
@@ -841,47 +839,42 @@
                                             Tapia Zegarra habiendo observado la necesidad de escuelas privadas en el distrito y que tengan una visión que
                                             este a la vanguardia de lo que la sociedad requería. </p>
                                     </div>
-
-                                </div>
-                                <div class="card-footer">
-                                    <div class="pub-leer-mas">
-                                        <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
-                                    </div>
-                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
-                        <a href="view?id=2">
-                            <div class="card shadow" style="border-radius:5px;">
-                                <div class="card1">
-                                    <img src="./public/img/galeria/p-convenio.jpg" alt="">
+                                <div class="pub-leer-mas">
+                                    <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
                                 </div>
-                                <div class="cardbody1 mx-3 py-3">
-                                    <div class="fecha-pub pb-1 d-flex justify-content-between">
-                                        <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Documentos</span></div>
-                                        <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;04-11-2024</p>
-                                    </div>
-                                    <br>
-                                    <div class="titulo">
-                                        <h5>Convenio - CPSEDU2024</h5>
-                                    </div>
-                                    <div class="detalle">
-                                        <p>Convenio de Prestación de Servicios Educativo 2024 - CPSEDU2024
-                                        El Colegio “JEAN PIAGET”, es una institución Educativa Privada, constituida legalmente, con 
-                                        RUC N° 20600133943, ubicada en Calle Las Orquídeas 100 A, Urb. Santa Isabel, 
-                                        </p>
-                                    </div>
-
-                                </div>
-                                <div class="card-footer">
-                                    <div class="pub-leer-mas">
-                                        <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
-                                    </div>
-                                </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 p-md-4 my-3 my-md-0 item">
+                    <a href="view?id=2">
+                        <div class="card shadow" style="border-radius:30px;">
+                            <div class="card1">
+                                <img src="./public/img/galeria/p-convenio.jpg" alt="">
                             </div>
-                        </a>
-                    </div>
+                            <div class="cardbody1 mx-3 py-3">
+                                <div class="fecha-pub pb-1 d-flex justify-content-between">
+                                    <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Documentos</span></div>
+                                    <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;04-11-2024</p>
+                                </div>
+                                <br>
+                                <div class="titulo">
+                                    <h5>Convenio - CPSEDU2024</h5>
+                                </div>
+                                <div class="detalle">
+                                    <p>Convenio de Prestación de Servicios Educativo 2024 - CPSEDU2024
+                                        El Colegio “JEAN PIAGET”, es una institución Educativa Privada, constituida legalmente, con
+                                        RUC N° 20600133943, ubicada en Calle Las Orquídeas 100 A, Urb. Santa Isabel,
+                                    </p>
+                                </div>
+
+                            </div>
+                                <div class="pub-leer-mas">
+                                    <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
+                                </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
