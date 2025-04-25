@@ -560,7 +560,7 @@
 
         #valores {
             padding-top: 6rem;
-            
+
         }
 
         #niveles h3 {
