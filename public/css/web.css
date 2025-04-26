@@ -24,7 +24,21 @@
   --color9: #1ab69d;
   --color10: #00d6d3;
 }
-
+.btn {
+  font-family: 'Mulish', sans-serif;
+  padding: 8px 30px;
+  border-radius: 2em;
+  color: white;
+  background-color: var(--color3);
+}
+.btn:hover{
+  background-color: #e0021b;
+}
+/* .btn-warning:hover {
+  background: var(--color3);
+  color: white;
+  border-color: var(--color3);
+} */
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 17px;
