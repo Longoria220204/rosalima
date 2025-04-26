@@ -590,21 +590,21 @@
         }
 
         /*seccion Cursos*/
-        #valores .noticias .owl-theme .owl-dots .owl-dot span {
+        #valores  .owl-theme .owl-dots .owl-dot span {
             width: 30px;
         }
 
-        #valores .noticias .owl-theme .owl-dots .owl-dot.active span {
+        #valores  .owl-theme .owl-dots .owl-dot.active span {
             /* background-color: red; */
             width: 50px;
         }
 
-        #valores.noticias .owl-theme .owl-dots .owl-dot.active span,
-        #valores .noticias .owl-theme .owl-dots .owl-dot:hover span {
+        #valores  .owl-theme .owl-dots .owl-dot.active span,
+        #valores  .owl-theme .owl-dots .owl-dot:hover span {
             background-color: var(--color8);
         }
 
-        #valores .noticias .owl-nav button {
+        #valores  .owl-nav button {
             background: var(--color4) !important;
             /* Color del fondo del botón */
             border: none !important;
@@ -625,21 +625,21 @@
             height: 45px !important;
         }
 
-        #valores .noticias .owl-nav span {
+        #valores .owl-nav span {
             font-size: 1.8rem;
         }
 
-        #valores .noticias .owl-nav .owl-prev {
+        #valores .owl-nav .owl-prev {
             left: -25px !important;
             /* Ajusta la posición horizontal del botón izquierdo */
         }
 
-        #valores .noticias .owl-nav .owl-next {
+        #valores .owl-nav .owl-next {
             right: -25px !important;
             /* Ajusta la posición horizontal del botón derecho */
         }
 
-        #valores .noticias .owl-nav button:hover {
+        #valores .owl-nav button:hover {
             background: #445d9c !important;
             /* Color de fondo del botón al pasar el mouse */
         }
@@ -1606,7 +1606,7 @@
             loop: true,
             margin: 50,
             nav: false,
-            dots: false,
+            dots: true,
             autoplay: true,
             autoplayTimeout: 7000,
             responsive: {
