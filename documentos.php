@@ -29,8 +29,43 @@
     <style>
         /* estilos del banner dinámico */
         #portada {
-            margin-top: -8rem;
-            padding-bottom: 5rem;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+                url('./public/img/web/p-documentos.jpg');
+            background-size: cover;
+            background-position: center 30%;
+            /*   padding: 550px 0 10px; */
+            position: relative;
+        }
+
+        #portada .page_title {
+            font-size: 50px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        #portada .breadcrumb-item+.breadcrumb-item::before {
+            color: white;
+        }
+
+        #portada .breadcrumb-item {
+            font-size: 22px;
+        }
+
+        #portada .breadcrumb-item a {
+            color: #fff;
+            font-size: 22px;
+        }
+
+        #portada {
+            height: 600px;
+            padding-bottom: 1rem;
+        }
+
+        #portada .content-portada {
+            position: absolute;
+            bottom: 15%;
+            left: 8%;
+            color: white;
         }
 
         #banner-web {
@@ -374,8 +409,8 @@
             /*  background-image: url('./public/img/web/fondo.png');
             background-repeat: no-repeat;
             background-size: 100% 600px;  */
-            padding-top: 8rem;
-            padding-bottom: 5rem;
+            padding-top: 3rem;
+
             position: relative;
         }
 
@@ -385,7 +420,7 @@
 
         #bienvenidos .img-icon-bienvenido {
             position: absolute;
-            top: -1%;
+            top: 10%;
             left: 10%;
             animation: about_animi_1 40s linear infinite;
         }
@@ -523,7 +558,7 @@
             width: 100%;
             object-fit: cover;
             height: 420px;
-            object-position: center;
+            object-position: top;
         }
 
         #publicaciones .titulo h5 {
@@ -623,34 +658,14 @@
             display: block !important;
         }
 
-        #owl-noticias .card i {
-            color: var(--color4);
-        }
 
-        #owl-noticias .card:hover {
+
+        #publicaciones .card:hover {
             border-color: var(--color4);
         }
- 
+
         #portada {
             position: relative;
-        }
-
-        #portada img {
-            height: 100%;
-            object-fit: cover;
-            object-position: bottom;
-        }
-
-        #portada .content-portada {
-            position: absolute;
-            bottom: 30%;
-            left: 10%;
-        }
-
-        #portada .breadcrumb-item a {
-            font-weight: 700;
-            color: var(--color6);
-
         }
 
         #portada h1 {
@@ -659,35 +674,48 @@
     </style>
     <?php include_once './partials/header.php'; ?>
 
-    <section id="portada">
-        <img src="./public/img/web/portada-nosotros.png" width="100%" alt="">
-        
-    </section>
-    <section id="bienvenidos">
-        <div class="container">
+    <div class="container-fluid" id="portada">
+        <div class="container content-portada">
             <div class="row">
-            <div class="content-bienvenidos">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="tf__breadcrumb_text">
-                            <h1>Documentos</h1>
-                            <div class="page_breadcrumb">
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="./">Inicio</a></li>
-                                        <li class="breadcrumb-item" style="color:var(--color4);font-weight:700;">Documentos</li>
-                                    </ol>
-                                </nav>
+                <div class="col-12 animate__animated animate__fadeInLeft">
+                    <h2 class="page_title">DOCUMENTOS</h2>
+                    <div class="page_breadcrumb">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.php" style="color:white;">Inicio</a></li>
+                                <li class="breadcrumb-item text-white">Documentos</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="bienvenidos">
+        <!-- <div class="container">
+            <div class="row">
+                <div class="content-bienvenidos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="tf__breadcrumb_text">
+                                    <h1>Documentos</h1>
+                                    <div class="page_breadcrumb">
+                                        <nav aria-label="breadcrumb">
+                                            <ol class="breadcrumb">
+                                                <li class="breadcrumb-item"><a href="./">Inicio</a></li>
+                                                <li class="breadcrumb-item" style="color:var(--color4);font-weight:700;">Documentos</li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-            </div>
-        </div>
-        <img class="img-icon-bienvenido" src="./public/img/icons/miselanea4.png" alt="">
+        <img class="img-icon-bienvenido" src="./public/img/icons/miselanea4.png" alt=""> -->
     </section>
     <section id="publicaciones">
         <div class="container-fluid " style="padding-left: 4%;padding-right:4%;">
@@ -697,71 +725,178 @@
                 </div>
             </div> -->
             <br>
-            <div class="row noticias">
-                <div class="owl-carousel owl-theme" id="owl-noticias">
-                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
-                        <a href="view.php?id=1">
-                            <div class="card shadow" style="border-radius:5px;">
-                                <div class="card1">
-                                    <img src="./public/img/galeria/p-reglamento.jpg" alt="">
+            <div class="row noticias d-flex justify-content-center">
+                <div class="col-12 col-md-4 p-md-4 my-3 my-md-0 item">
+                    <a href="view.php?id=6">
+                        <div class="card shadow" style="border-radius:5px;">
+                            <div class="card1">
+                                <img src="./public/img/galeria/p_ficha_familiar.jpg" alt="">
+                            </div>
+                            <div class="cardbody1 mx-3 py-3">
+                                <div class="fecha-pub pb-1 d-flex justify-content-between">
+                                    <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Documentos</span></div>
+                                    <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;10-01-2025</p>
                                 </div>
-                                <div class="cardbody1 mx-3 py-3">
-                                    <div class="fecha-pub pb-1 d-flex justify-content-between">
-                                        <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Documentos</span></div>
-                                        <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;04-11-2024</p>
-                                    </div>
-                                    <br>
-                                    <div class="titulo">
-                                        <h5>Reglamento Interno</h5>
-                                    </div>
-                                    <div class="detalle">
-                                        <p>La I.E.P. JEAN PIAGET es un centro educativo que surge a iniciativa de la Sra. Miriam Zegarra A. y Prof. Guillermo
-                                            Tapia Zegarra habiendo observado la necesidad de escuelas privadas en el distrito y que tengan una visión que
-                                            este a la vanguardia de lo que la sociedad requería. </p>
-                                    </div>
+                                <br>
+                                <div class="titulo">
+                                    <h5>FICHA FAMILIAR DEL POSTULANTE 2025</h5>
+                                </div>
+                                <div class="detalle">
+                                    <p>El Colegio Rosa de Lima, comprometido con una educación integral y personalizada, requiere la presentación de la Ficha Familiar como parte esencial del proceso de admisión.</p>
+                                </div>
 
-                                </div>
-                                <div class="card-footer">
-                                    <div class="pub-leer-mas">
-                                        <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
-                                    </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="pub-leer-mas">
+                                    <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
-                        <a href="view.php?id=2">
-                            <div class="card shadow" style="border-radius:5px;">
-                                <div class="card1">
-                                    <img src="./public/img/galeria/p-convenio.jpg" alt="">
-                                </div>
-                                <div class="cardbody1 mx-3 py-3">
-                                    <div class="fecha-pub pb-1 d-flex justify-content-between">
-                                        <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Documentos</span></div>
-                                        <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;04-11-2024</p>
-                                    </div>
-                                    <br>
-                                    <div class="titulo">
-                                        <h5>Convenio - CPSEDU2024</h5>
-                                    </div>
-                                    <div class="detalle">
-                                        <p>Convenio de Prestación de Servicios Educativo 2024 - CPSEDU2024
-                                        El Colegio “JEAN PIAGET”, es una institución Educativa Privada, constituida legalmente, con 
-                                        RUC N° 20600133943, ubicada en Calle Las Orquídeas 100 A, Urb. Santa Isabel, 
-                                        </p>
-                                    </div>
-
-                                </div>
-                                <div class="card-footer">
-                                    <div class="pub-leer-mas">
-                                        <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                   
+                        </div>
+                    </a>
                 </div>
+                <!-- <div class="col-12 col-md-4 p-md-4 my-3 my-md-0 item">
+                    <a href="view.php?id=5">
+                        <div class="card shadow" style="border-radius:5px;">
+                            <div class="card1">
+                                <img src="./public/img/galeria/p_referencia_colegio.jpg" alt="">
+                            </div>
+                            <div class="cardbody1 mx-3 py-3">
+                                <div class="fecha-pub pb-1 d-flex justify-content-between">
+                                    <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Documentos</span></div>
+                                    <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;10-01-2025</p>
+                                </div>
+                                <br>
+                                <div class="titulo">
+                                    <h5>REFERENCIA DEL COLEGIO DE PROCEDENCIA</h5>
+                                </div>
+                                <div class="detalle">
+                                    <p>El Colegio Rosa de Lima solicita el Informe de Referencia del Colegio de Procedencia como parte fundamental del proceso de admisión.</p>
+                                </div>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="pub-leer-mas">
+                                    <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 p-md-4 my-3 my-md-0 item">
+                    <a href="view.php?id=4">
+                        <div class="card shadow" style="border-radius:5px;">
+                            <div class="card1">
+                                <img src="./public/img/galeria/p_informe_economico.jpg" alt="">
+                            </div>
+                            <div class="cardbody1 mx-3 py-3">
+                                <div class="fecha-pub pb-1 d-flex justify-content-between">
+                                    <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Documentos</span></div>
+                                    <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;10-01-2025</p>
+                                </div>
+                                <br>
+                                <div class="titulo">
+                                    <h5>INFORME ECONÓMICO ADMISIÓN 2025</h5>
+                                </div>
+                                <div class="detalle">
+                                    <p>El Colegio Rosa de Lima pone a disposición el Informe Económico de Admisión, documento fundamental para garantizar la transparencia en el proceso de matrícula y establecer los compromisos financieros entre la institución y las familias.</p>
+                                </div>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="pub-leer-mas">
+                                    <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 p-md-4 my-3 my-md-0 item">
+                    <a href="view.php?id=3">
+                        <div class="card shadow" style="border-radius:5px;">
+                            <div class="card1">
+                                <img src="./public/img/galeria/p_declaracion_jurada_admision.jpg" alt="">
+                            </div>
+                            <div class="cardbody1 mx-3 py-3">
+                                <div class="fecha-pub pb-1 d-flex justify-content-between">
+                                    <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Documentos</span></div>
+                                    <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;10-01-2025</p>
+                                </div>
+                                <br>
+                                <div class="titulo">
+                                    <h5>DECLARACIÓN JURADA DE ADMISIÓN 2025</h5>
+                                </div>
+                                <div class="detalle">
+                                    <p>El Colegio Rosa de Lima pone a disposición de las familias postulantes la Declaración Jurada de Admisión, documento oficial que forma parte esencial del proceso de ingreso a nuestra institución educativa.</p>
+                                </div>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="pub-leer-mas">
+                                    <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 p-md-4 my-3 my-md-0 item">
+                    <a href="view.php?id=2">
+                        <div class="card shadow" style="border-radius:5px;">
+                            <div class="card1">
+                                <img src="./public/img/galeria/p_reglamento_admision.jpg" alt="">
+                            </div>
+                            <div class="cardbody1 mx-3 py-3">
+                                <div class="fecha-pub pb-1 d-flex justify-content-between">
+                                    <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Documentos</span></div>
+                                    <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;10-01-2025</p>
+                                </div>
+                                <br>
+                                <div class="titulo">
+                                    <h5>REGLAMENTO DE ADMISIÓN 2025</h5>
+                                </div>
+                                <div class="detalle">
+                                    <p>El presente Reglamento de Admisión establece los principios, normas y procedimientos que rigen nuestro proceso de ingreso, con el objetivo de garantizar un sistema transparente, equitativo y eficiente para todos los postulantes.</p>
+                                </div>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="pub-leer-mas">
+                                    <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 p-md-4 my-3 my-md-0 item">
+                    <a href="view.php?id=1">
+                        <div class="card shadow" style="border-radius:5px;">
+                            <div class="card1">
+                                <img src="./public/img/galeria/p_solicitud_postulante.jpg" alt="">
+                            </div>
+                            <div class="cardbody1 mx-3 py-3">
+                                <div class="fecha-pub pb-1 d-flex justify-content-between">
+                                    <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Documentos</span></div>
+                                    <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;10-01-2025</p>
+                                </div>
+                                <br>
+                                <div class="titulo">
+                                    <h5>SOLICITUD DEL POSTULANTE 2025</h5>
+                                </div>
+                                <div class="detalle">
+                                    <p>El Colegio Rosa de Lima pone a disposición de las familias interesadas el Formulario de Solicitud de Admisión para el proceso de ingreso.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="pub-leer-mas">
+                                    <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div> -->
+
+
             </div>
         </div>
     </section>

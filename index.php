@@ -484,7 +484,7 @@
         #bienvenidos .img-icon-bienvenido {
             position: absolute;
             bottom: -10%;
-            left: 20%;
+            left: 1%;
             -webkit-animation: about_animi_1 40s linear infinite;
             /*  animation: about_ani_1 40s linear infinite; */
         }
@@ -897,17 +897,16 @@
                         <div class="titleC overlay">
                             <div>
                                 <h2 class="title">¡Bienvenidos al colegio<br>
-                                    <span style="color:var(--color3);text-decoration: underline;">Jean Piaget!</span>
+                                    <span style="color:var(--color3);text-decoration: underline;">Rosa de Lima !</span>
                                 </h2>
                                 <br>
                                 <p class="parrafo-slider">
-                                    Aquí, aprendemos haciendo y viviendo. Nuestro enfoque integral,basado en proyectos
-                                    <br> inspiran a nuestros estudiantes a ir más allá de los libros, cultivando una
-                                    <br> curiosidad constante por aprender.
+                                36 años formando con valores y excelencia. Educación inicial y primaria <br> 
+                                 en un entorno seguro e inclusivo. Aprendizajes significativos<br>para el futuro.
                                 </p>
                                 <br>
                                 <div class="mt-lg-5">
-                                    <a class="boton" href="admision">Admisión</a>
+                                    <a class="boton" href="./admision.php">Admisión</a>
                                     <!--  <a class="boton" href="https://wa.me/+51983149305" target="_blank">Inscríbete</a> -->
                                 </div>
                             </div>
@@ -929,7 +928,7 @@
     <section id="bienvenidos">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 px-5 pt-5">
+                <div class="col-lg-6 px-5 pt-5" style="position:relative;">
                     <h2>Bienvenidos</h2>
                     <br>
                     <p><b>¡Ave María! Estimada comunidad de la IE “Rosa de Lima”</b>,</p>
@@ -943,9 +942,10 @@
                     </p>
                     <br>
                     <div class="mt-lg-5">
-                        <a class="boton2" href="./nosotros">Ver Más</a>
+                        <a class="boton2" href="./nosotros.php">Ver Más</a>
                         <!--  <a class="boton" href="https://wa.me/+51983149305" target="_blank">Inscríbete</a> -->
                     </div>
+                    <img class="img-icon-bienvenido" src="./public/img/icons/miselanea4.png" alt="">
                 </div>
                 <div class="col-lg-6 pt-5 px-5 d-flex justify-content-center" style="position:relative;">
                     <img src="./public/img/web/rosa_inicio.png" style="width:80%;z-index:99" alt="">
@@ -958,7 +958,7 @@
                 </div>
             </div>
         </div>
-        <img class="img-icon-bienvenido" src="./public/img/icons/miselanea4.png" alt="">
+      
     </section>
     <br>
     <br>
@@ -978,7 +978,7 @@
 ">
                         <h3>Nivel Inicial</h3>
                         <p>Fomentamos la autonomía y las habilidades comunicativas de los estudiantes a través de experiencias de aprendizaje significativas y materiales manipulables.</p>
-                        <a href="inicial">
+                        <a href="./inicial.php">
                             <i style="color:var(--color8);" class="fas fa-long-arrow-right"></i>
                         </a>
                         <img class="img-bg-niveles" src="./public/img/icons/miselanea3.png" alt="">
@@ -989,7 +989,7 @@
                     <div class="content-valores h-100" style="background-color:#A37C0D;">
                         <h3>Nivel Primaria</h3>
                         <p>Promover un aprendizaje dinámico y personalizado mediante metodologías innovadoras que respondan a las necesidades de cada grupo de estudiantes.</p>
-                        <a href="primaria">
+                        <a href="./primaria.php">
                             <i style="color:var(--color3);" class="fas fa-long-arrow-right"></i>
                         </a>
                         <img class="img-bg-niveles" src="./public/img/icons/miselanea3.png" alt="">
@@ -1012,7 +1012,7 @@
 
     </section>
     <section id="lema">
-        <span>"Formación académica y humana para un futuro exitoso"</span>
+        <span>"Hombres de Oración, Estudio y Verdad"</span>
     </section>
     <section id="valores" class="tf__categories mt_95">
         <div class="container">

@@ -28,9 +28,49 @@
     <script src="./public/js/vue.min.js"></script>
     <style>
         /* estilos del banner dinámico */
-        #portada {
+        /*  #portada {
             margin-top: -8rem;
             padding-bottom: 5rem;
+        }
+ */
+        #portada {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+                url('./public/img/web/p_nosotros.jpg');
+            background-size: cover;
+            background-position: center 30%;
+            /*   padding: 550px 0 10px; */
+            position: relative;
+        }
+
+        #portada .page_title {
+            font-size: 50px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        #portada .breadcrumb-item+.breadcrumb-item::before {
+            color: white;
+        }
+
+        #portada .breadcrumb-item {
+            font-size: 22px;
+        }
+
+        #portada .breadcrumb-item a {
+            color: #fff;
+            font-size: 22px;
+        }
+
+        #portada {
+            height: 600px;
+            padding-bottom: 1rem;
+        }
+
+        #portada .content-portada {
+            position: absolute;
+            bottom: 15%;
+            left: 8%;
+            color: white;
         }
 
         #banner-web {
@@ -40,7 +80,6 @@
 
         #header nav.navbar {
             background-color: white;
-            background-color: transparent;
             background-size: 100%;
         }
 
@@ -390,9 +429,10 @@
         }
 
         #bienvenidos .img-icon-bienvenido {
+
             position: absolute;
-            top: -1%;
-            left: 10%;
+            top: -100%;
+            left: -5%;
             animation: about_animi_1 40s linear infinite;
         }
 
@@ -636,28 +676,7 @@
             border-color: var(--color4);
         }
 
-        #portada {
-            position: relative;
-        }
-
-        #portada img {
-            height: 100%;
-            object-fit: cover;
-            object-position: bottom;
-        }
-
-        #portada .content-portada {
-            position: absolute;
-            bottom: 30%;
-            left: 10%;
-        }
-
-        #portada .breadcrumb-item a {
-            font-weight: 700;
-            color: var(--color6);
-
-        }
-
+       
         #portada h1 {
             font-size: 4rem;
         }
@@ -722,31 +741,48 @@
     </style>
     <?php include_once './partials/header.php'; ?>
 
-    <section id="portada">
+    <!--<section id="portada">
         <img src="./public/img/web/portada-nosotros.png" width="100%" alt="">
-        
-    </section>
-    <section id="bienvenidos">
-        <div class="container">
-        <div class="content-bienvenidos">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="tf__breadcrumb_text">
-                            <h1>Nosotros</h1>
-                            <div class="page_breadcrumb">
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="./">Inicio</a></li>
-                                        <li class="breadcrumb-item" style="color:var(--color4);font-weight:700;">Nosotros</li>
-                                    </ol>
-                                </nav>
-                            </div>
-                        </div>
+    </section> -->
+    <div class="container-fluid" id="portada">
+        <div class="container content-portada">
+            <div class="row">
+                <div class="col-12 animate__animated animate__fadeInLeft">
+                    <h2 class="page_title">NOSOTROS</h2>
+                    <div class="page_breadcrumb">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.php" style="color:white;">Inicio</a></li>
+                                <li class="breadcrumb-item text-white">Niveles</li>
+                            </ol>
+                        </nav>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <section id="bienvenidos">
+        <div class="container">
+            <div class="content-bienvenidos" style="position:relative;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="tf__breadcrumb_text">
+                                <h1>Nosotros</h1>
+                                <div class="page_breadcrumb">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="./" style="color:var(--color4);">Inicio</a></li>
+                                            <li class="breadcrumb-item" style="color:var(--color4);font-weight:700;">Nosotros</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="img-icon-bienvenido" src="./public/img/icons/miselanea4.png" alt="">
+            </div>
             <div class="row">
                 <div class="col-lg-6 pt-5 px-5">
                     <!-- <h2>Bienvenidos</h2>
@@ -768,7 +804,7 @@
                 </div>
                 <div class="col-lg-6 pt-5 px-5 d-flex justify-content-center" style="position:relative;">
                     <div style="z-index:99;">
-                        <center><img src="./public/img/web/monja_lima.jpg" alt=""></center>
+                        <center><img src="./public/img/web/monja_lima.jpg" alt="" style="border-radius:20px;"></center>
                     </div>
                     <!--  <img src="./public/img/web/b-nosotros1.png" style="width:90%;z-index:99" alt=""> -->
                     <!--  <div style="right:20%; bottom:1%; position:absolute;background-color: var(--color4);padding:1rem;z-index:99;border-radius:15px;">
@@ -780,7 +816,7 @@
                 </div>
             </div>
         </div>
-        <img class="img-icon-bienvenido" src="./public/img/icons/miselanea4.png" alt="">
+       
     </section>
     <br>
     <br>

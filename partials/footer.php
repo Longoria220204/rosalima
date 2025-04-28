@@ -374,7 +374,7 @@
                     <span class="ms-4">Horario de atención:</span>
                 </div>
                 <div class="d-flex text-white my-3" style="align-items: center;">
-                    <span class="ms-4">&nbsp;&nbsp;&nbsp;8:00 am. á 3:00 pm</span>
+                    <span class="ms-4">&nbsp;&nbsp;&nbsp;8:00 am. a 3:00 pm</span>
                 </div>
                 <br>
                 <div class="col-lg d-flex justify-content-start text-black">

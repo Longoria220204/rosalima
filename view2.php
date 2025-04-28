@@ -133,14 +133,14 @@
         </div> -->
         <div class="row justify-content-between mt-4">
             <div class="col-md-7">
-                <?php include_once 'talleres/taller' . $_GET['id'] . '.php' ?>
+                <?php include_once 'pastorales/pastoral' . $_GET['id'] . '.php' ?>
                 <div class="col-md text-center pt-5">
-                    <a href="talleres"><button class="button5">Ver Más</button></a>
+                    <button class="button5" onclick="window.history.back()">Ver Más</button>
                 </div>
             </div>
             <div class="col-12 col-lg-4 d-flex justify-content-center my-3">
 
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100063958389095&tabs=timeline&width=340&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=485007741234140" width="100%" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FLALIANOS&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=928526382184489" width="100%" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
         </div>
     </section>

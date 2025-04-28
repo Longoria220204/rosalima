@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,8 +29,43 @@
     <style>
         /* estilos del banner dinámico */
         #portada {
-            /* margin-top: -8rem; */
-            padding-bottom: 3rem;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+                url('./public/img/web/portada_dominicos.jpg');
+            background-size: cover;
+            background-position: center 30%;
+            /*   padding: 550px 0 10px; */
+            position: relative;
+        }
+
+        #portada .page_title {
+            font-size: 50px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        #portada .breadcrumb-item+.breadcrumb-item::before {
+            color: white;
+        }
+
+        #portada .breadcrumb-item {
+            font-size: 22px;
+        }
+
+        #portada .breadcrumb-item a {
+            color: #fff;
+            font-size: 22px;
+        }
+
+        #portada {
+            height: 450px;
+            padding-bottom: 1rem;
+        }
+
+        #portada .content-portada {
+            position: absolute;
+            bottom: 15%;
+            left: 8%;
+            color: white;
         }
 
         #banner-web {
@@ -372,7 +410,7 @@
             background-repeat: no-repeat;
             background-size: 100% 600px;  */
             padding-top: 3rem;
-            padding-bottom: 3rem;
+
             position: relative;
         }
 
@@ -382,7 +420,7 @@
 
         #bienvenidos .img-icon-bienvenido {
             position: absolute;
-            top: -1%;
+            top: 10%;
             left: 10%;
             animation: about_animi_1 40s linear infinite;
         }
@@ -520,7 +558,7 @@
             width: 100%;
             object-fit: cover;
             height: 420px;
-            object-position: center;
+            object-position: top;
         }
 
         #publicaciones .titulo h5 {
@@ -620,11 +658,9 @@
             display: block !important;
         }
 
-        #owl-noticias .card i {
-            color: var(--color4);
-        }
 
-        #owl-noticias .card:hover {
+
+        #publicaciones .card:hover {
             border-color: var(--color4);
         }
 
@@ -632,84 +668,266 @@
             position: relative;
         }
 
-        #portada img {
-            height: 100%;
-            object-fit: cover;
-            object-position: bottom;
-        }
-
-        #portada .content-portada {
-            position: absolute;
-            bottom: 30%;
-            left: 10%;
-        }
-
-        #portada .breadcrumb-item a {
-            font-weight: 700;
-            color: var(--color6);
-
-        }
-
         #portada h1 {
-            font-size: 3rem;
-
+            font-size: 4rem;
         }
     </style>
     <?php include_once './partials/header.php'; ?>
 
-    <section id="portada">
-        <img src="./public/img/web/portada_dominicos_demo.jpg" width="100%" alt="">
-
-    </section>
+    <div class="container-fluid" id="portada">
+        <div class="container content-portada">
+            <div class="row">
+                <div class="col-12 animate__animated animate__fadeInLeft">
+                    <h2 class="page_title">PASTORAL DOMINICOS
+                    </h2>
+                    <div class="page_breadcrumb">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.php" style="color:white;">Inicio</a></li>
+                                <li class="breadcrumb-item text-white">Pastoral</li>
+                                <li class="breadcrumb-item text-white">Pastoral Dominicos</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <section id="bienvenidos">
-        <div class="container">
-        <div class="content-bienvenidos">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="tf__breadcrumb_text">
-                            <h1>Pastoral Dominicandor</h1>
-                            <div class="page_breadcrumb">
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="./">Inicio</a></li>
-                                        <li class="breadcrumb-item" style="color:var(--color4);font-weight:700;">Pastoral Dominicando</li>
-                                    </ol>
-                                </nav>
+        <!-- <div class="container">
+            <div class="row">
+                <div class="content-bienvenidos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="tf__breadcrumb_text">
+                                    <h1>Documentos</h1>
+                                    <div class="page_breadcrumb">
+                                        <nav aria-label="breadcrumb">
+                                            <ol class="breadcrumb">
+                                                <li class="breadcrumb-item"><a href="./">Inicio</a></li>
+                                                <li class="breadcrumb-item" style="color:var(--color4);font-weight:700;">Documentos</li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-           
-        </div>
-        <!-- <img class="img-icon-bienvenido" src="./public/img/icons/miselanea4.png" alt=""> -->
+        <img class="img-icon-bienvenido" src="./public/img/icons/miselanea4.png" alt=""> -->
+    </section>
+    <section id="publicaciones">
         <div class="container-fluid " style="padding-left: 4%;padding-right:4%;">
-           <div class="row">
-                <div class="col-lg-6 pt-4 px-5">
-                    <!-- <h2>Bienvenidos</h2>
-                    <br> -->
-                    <p>Este año 2025 iniciamos este proyecto pastoral educativo con la finalidad de acompañar a nuestros niños y niñas en su crecimiento espiritual y formativo, guiados por el carisma dominico. A través de actividades lúdicas, educativas y de reflexión, buscamos fortalecer su fe, valores y sentido de comunidad, promoviendo un desarrollo integral en un ambiente de amor, respeto y fe.</p>
-                    <p>
-                    Este proyecto es una oportunidad para que nuestros estudiantes descubran y vivan su fe de manera sencilla y significativa, aprendiendo a ser pequeños dominicos en su día a día.
-                    </p>
+            <!--  <div class="row">
+                <div class="col-lg">
+                    <h2 style="color:var(--color6);text-align:center;">Publicaciones</h2>
                 </div>
-                <!-- <div class="col-lg-6 pt-5 px-5 d-flex justify-content-center" style="position:relative;">
-                    <div style="z-index:99;">
-                        <center><img src="./public/img/web/monja_lima.jpg" alt=""></center>
-                    </div> -->
-                    <!--  <img src="./public/img/web/b-nosotros1.png" style="width:90%;z-index:99" alt=""> -->
-                    <!--  <div style="right:20%; bottom:1%; position:absolute;background-color: var(--color4);padding:1rem;z-index:99;border-radius:15px;">
+            </div> -->
+            <div class="container" style="padding-left: 4%;padding-right:4%;">
+                <div class="row">
+                    <div class="col-lg-6 pt-4 px-5 my-auto">
+                        <h2 style="color:black;">Pastoral Dominicos</h2>
+                        <br>
+                        <p style="text-align:justify;">Este año 2025 iniciamos este proyecto pastoral educativo con la finalidad de acompañar a nuestros niños y niñas en su crecimiento espiritual y formativo, guiados por el carisma dominico. A través de actividades lúdicas, educativas y de reflexión, buscamos fortalecer su fe, valores y sentido de comunidad, promoviendo un desarrollo integral en un ambiente de amor, respeto y fe.
+
+                            Este proyecto es una oportunidad para que nuestros estudiantes descubran y vivan su fe de manera sencilla y significativa, aprendiendo a ser pequeños dominicos en su día a día.</p>
+                    </div>
+                    <div class="col-lg-6 pt-5 px-5 d-flex justify-content-center" style="position:relative;">
+                        <div style="z-index:99;">
+                            <center><img src="./public/img/web/pi_pastoral_dominicos.jpeg" style="border-radius: 15px;" alt=""></center>
+                        </div>
+                        <!--  <img src="./public/img/web/b-nosotros1.png" style="width:90%;z-index:99" alt=""> -->
+                        <!--  <div style="right:20%; bottom:1%; position:absolute;background-color: var(--color4);padding:1rem;z-index:99;border-radius:15px;">
                         <center><i style="color:white;font-size:1.8rem;" class="far fa-check-circle"></i></center>
                         <h4 style="color:white;"><span>+49 años</span></h4>
                     </div> -->
-                    <!-- <img width="80" style="position:absolute;top:-2%;right:15%;z-index:1; animation: banner_animi_2 2s linear infinite alternate;" src="./public/img/icons/miselanea1.png" alt="">
+                        <!-- <img width="80" style="position:absolute;top:-2%;right:15%;z-index:1; animation: banner_animi_2 2s linear infinite alternate;" src="./public/img/icons/miselanea1.png" alt="">
                     <img width="80" style="position:absolute;left:14%;bottom:15%;;z-index:1;animation: banner_animi_2 2s linear infinite alternate;" src="./public/img/icons/miselanea2.png" alt="">
                 </div> -->
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row noticias d-flex justify-content-center">
+                <div class="col-12 col-md-4 p-md-4 my-3 my-md-0 item">
+                    <a href="view2.php?id=2">
+                        <div class="card shadow" style="border-radius:5px;">
+                            <div class="card1">
+                                <img src="./public/img/galeria/p_dominicos.jpeg" alt="">
+                            </div>
+                            <div class="cardbody1 mx-3 py-3">
+                                <div class="fecha-pub pb-1 d-flex justify-content-between">
+                                    <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Pastoral Dominicos</span></div>
+                                    <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;10-01-2025</p>
+                                </div>
+                                <br>
+                                <div class="titulo">
+                                    <h5>FE Y VIDA CRISTIANA</h5>
+                                </div>
+                                <div class="detalle">
+                                    <p>Como parte de la formación de nuestros estudiantes esta la pastoral educativa que busca fortalecer la FE Y VIDA CRISTIANA de nuestros estudiantes y sus familias.</p>
+                                </div>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="pub-leer-mas">
+                                    <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- <div class="col-12 col-md-4 p-md-4 my-3 my-md-0 item">
+                    <a href="view.php?id=5">
+                        <div class="card shadow" style="border-radius:5px;">
+                            <div class="card1">
+                                <img src="./public/img/galeria/p_referencia_colegio.jpg" alt="">
+                            </div>
+                            <div class="cardbody1 mx-3 py-3">
+                                <div class="fecha-pub pb-1 d-flex justify-content-between">
+                                    <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Documentos</span></div>
+                                    <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;10-01-2025</p>
+                                </div>
+                                <br>
+                                <div class="titulo">
+                                    <h5>REFERENCIA DEL COLEGIO DE PROCEDENCIA</h5>
+                                </div>
+                                <div class="detalle">
+                                    <p>El Colegio Rosa de Lima solicita el Informe de Referencia del Colegio de Procedencia como parte fundamental del proceso de admisión.</p>
+                                </div>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="pub-leer-mas">
+                                    <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 p-md-4 my-3 my-md-0 item">
+                    <a href="view.php?id=4">
+                        <div class="card shadow" style="border-radius:5px;">
+                            <div class="card1">
+                                <img src="./public/img/galeria/p_informe_economico.jpg" alt="">
+                            </div>
+                            <div class="cardbody1 mx-3 py-3">
+                                <div class="fecha-pub pb-1 d-flex justify-content-between">
+                                    <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Documentos</span></div>
+                                    <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;10-01-2025</p>
+                                </div>
+                                <br>
+                                <div class="titulo">
+                                    <h5>INFORME ECONÓMICO ADMISIÓN 2025</h5>
+                                </div>
+                                <div class="detalle">
+                                    <p>El Colegio Rosa de Lima pone a disposición el Informe Económico de Admisión, documento fundamental para garantizar la transparencia en el proceso de matrícula y establecer los compromisos financieros entre la institución y las familias.</p>
+                                </div>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="pub-leer-mas">
+                                    <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 p-md-4 my-3 my-md-0 item">
+                    <a href="view.php?id=3">
+                        <div class="card shadow" style="border-radius:5px;">
+                            <div class="card1">
+                                <img src="./public/img/galeria/p_declaracion_jurada_admision.jpg" alt="">
+                            </div>
+                            <div class="cardbody1 mx-3 py-3">
+                                <div class="fecha-pub pb-1 d-flex justify-content-between">
+                                    <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Documentos</span></div>
+                                    <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;10-01-2025</p>
+                                </div>
+                                <br>
+                                <div class="titulo">
+                                    <h5>DECLARACIÓN JURADA DE ADMISIÓN 2025</h5>
+                                </div>
+                                <div class="detalle">
+                                    <p>El Colegio Rosa de Lima pone a disposición de las familias postulantes la Declaración Jurada de Admisión, documento oficial que forma parte esencial del proceso de ingreso a nuestra institución educativa.</p>
+                                </div>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="pub-leer-mas">
+                                    <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 p-md-4 my-3 my-md-0 item">
+                    <a href="view.php?id=2">
+                        <div class="card shadow" style="border-radius:5px;">
+                            <div class="card1">
+                                <img src="./public/img/galeria/p_reglamento_admision.jpg" alt="">
+                            </div>
+                            <div class="cardbody1 mx-3 py-3">
+                                <div class="fecha-pub pb-1 d-flex justify-content-between">
+                                    <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Documentos</span></div>
+                                    <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;10-01-2025</p>
+                                </div>
+                                <br>
+                                <div class="titulo">
+                                    <h5>REGLAMENTO DE ADMISIÓN 2025</h5>
+                                </div>
+                                <div class="detalle">
+                                    <p>El presente Reglamento de Admisión establece los principios, normas y procedimientos que rigen nuestro proceso de ingreso, con el objetivo de garantizar un sistema transparente, equitativo y eficiente para todos los postulantes.</p>
+                                </div>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="pub-leer-mas">
+                                    <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 p-md-4 my-3 my-md-0 item">
+                    <a href="view.php?id=1">
+                        <div class="card shadow" style="border-radius:5px;">
+                            <div class="card1">
+                                <img src="./public/img/galeria/p_solicitud_postulante.jpg" alt="">
+                            </div>
+                            <div class="cardbody1 mx-3 py-3">
+                                <div class="fecha-pub pb-1 d-flex justify-content-between">
+                                    <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Documentos</span></div>
+                                    <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;10-01-2025</p>
+                                </div>
+                                <br>
+                                <div class="titulo">
+                                    <h5>SOLICITUD DEL POSTULANTE 2025</h5>
+                                </div>
+                                <div class="detalle">
+                                    <p>El Colegio Rosa de Lima pone a disposición de las familias interesadas el Formulario de Solicitud de Admisión para el proceso de ingreso.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="pub-leer-mas">
+                                    <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div> -->
+
+
             </div>
         </div>
-    </section> 
+    </section>
     <br>
     <br>
     <br>
@@ -719,8 +937,7 @@
     </ /?php include_once './partials/redes.php' ; ?>
     <?php include_once './partials/footer.php'; ?>
 </body>
-
-
+<!-- carrousel -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
