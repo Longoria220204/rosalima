@@ -13,9 +13,8 @@
 :root {
   --color1: #919191;
   --color2: #f7ed6a;
-  
   --color3: #9C0A12;
-  --color4: #e0021b;
+ /*  --color4: #e0021b; */
   --color4: #022237;
   --color5: #f6f6f6;
   --color6: #262626;
@@ -234,7 +233,7 @@ a {
       #ffff 10%,
       #ffff 50%
     ),
-    url("http://localhost/rosalima/public/img/web/footer.jpg");
+    url("../../public/img/web/footer.jpg");
   background-size: cover !important;
   background-position: center 30%;
   padding: 10px;

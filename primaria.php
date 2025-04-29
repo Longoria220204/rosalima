@@ -453,7 +453,7 @@
             /*  padding-top: 8rem;*/
             position: relative;
             padding-bottom: 8rem !important;
-            margin-bottom: 3rem;
+            padding-top: 5rem !important;
         }
 
         #bienvenidos p {
@@ -590,21 +590,21 @@
         }
 
         /*seccion Cursos*/
-        #valores  .owl-theme .owl-dots .owl-dot span {
+        #valores .owl-theme .owl-dots .owl-dot span {
             width: 30px;
         }
 
-        #valores  .owl-theme .owl-dots .owl-dot.active span {
+        #valores .owl-theme .owl-dots .owl-dot.active span {
             /* background-color: red; */
             width: 50px;
         }
 
-        #valores  .owl-theme .owl-dots .owl-dot.active span,
-        #valores  .owl-theme .owl-dots .owl-dot:hover span {
+        #valores .owl-theme .owl-dots .owl-dot.active span,
+        #valores .owl-theme .owl-dots .owl-dot:hover span {
             background-color: var(--color8);
         }
 
-        #valores  .owl-nav button {
+        #valores .owl-nav button {
             background: var(--color4) !important;
             /* Color del fondo del botón */
             border: none !important;
@@ -1048,160 +1048,170 @@
     </div>
     <section id="bienvenidos">
         <div class="container">
-            <div class="row">
-                <div class="d-felx justify-content-center">
+            <!-- <div class="row">
+                <div class="d-flex justify-content-center">
                     <div class="pt-5">
                         <h2>Nivel Primaria</h2>
                     </div>
-                    <!--  <img class="img-icon-bienvenido" src="./public/img/icons/miselanea3.png" alt=""> -->
                     <div class="pt-5">
                         <h3>Propuesta Pedagógica para el Nivel Primaria</h3>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="row">
 
                 <div class="col-lg-6 px-3 pt-3" style="position:relative;">
-                    <div class="row">
-                        <p>La propuesta pedagógica para el nivel Primaria de nuestra institución busca responder a las necesidades educativas de los estudiantes, garantizando un aprendizaje significativo, contextualizado y alineado con el Currículo Nacional de la Educación Básica. Este enfoque promueve el desarrollo integral del estudiante, potenciando sus capacidades cognitivas, emocionales, sociales y físicas.</p>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg col-md-5 pt-4 " id="info">
-                            <div class="accordion" id="accordionPanelsStayOpenExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                        <button class="accordion-button d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                            1.- Diversificación Curricular
-                                            <i class="fas fa-chevron-down ms-auto"></i>
-                                        </button>
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-                                        <div class="accordion-body">
+                    <div class="mx-4">
+                        <div class="row">
+                            <div class="pb-2">
+                                <div class="pt-5">
+                                    <h2>Nivel Primaria</h2>
+                                </div>
+                                <div class="pt-5">
+                                    <h3>Propuesta Pedagógica para el Nivel Primaria</h3>
+                                </div>
+                            </div>
 
-                                            <p>Adaptaremos los desempeños y competencias a las características y necesidades de los estudiantes, considerando el contexto sociocultural en el que se desenvuelven. Estas adaptaciones se reflejarán en el plan anual y en las unidades didácticas, integrando proyectos, módulos y situaciones de aprendizaje contextualizadas.</p>
+                            <p>La propuesta pedagógica para el nivel Primaria de nuestra institución busca responder a las necesidades educativas de los estudiantes, garantizando un aprendizaje significativo, contextualizado y alineado con el Currículo Nacional de la Educación Básica. Este enfoque promueve el desarrollo integral del estudiante, potenciando sus capacidades cognitivas, emocionales, sociales y físicas.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg col-md-5 pt-4 " id="info">
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                            <button class="accordion-button d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                                1.- Diversificación Curricular
+                                                <i class="fas fa-chevron-down ms-auto"></i>
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                                            <div class="accordion-body">
 
+                                                <p>Adaptaremos los desempeños y competencias a las características y necesidades de los estudiantes, considerando el contexto sociocultural en el que se desenvuelven. Estas adaptaciones se reflejarán en el plan anual y en las unidades didácticas, integrando proyectos, módulos y situaciones de aprendizaje contextualizadas.</p>
+
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                        <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                            2.- Enfoque Interdisciplinario
-                                            <i class="fas fa-chevron-down ms-auto"></i>
-                                        </button>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                            <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                                2.- Enfoque Interdisciplinario
+                                                <i class="fas fa-chevron-down ms-auto"></i>
+                                            </button>
 
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                                        <div class="accordion-body">
-                                            <p>Promoveremos la integración de áreas curriculares como Matemática, Comunicación, Ciencia y Tecnología, Personal Social, Formación Religiosa y Arte, abordando temas transversales como el cuidado del medioambiente, la salud, los valores y la ciudadanía activa. Esta estrategia busca que los estudiantes desarrollen un pensamiento crítico y reflexivo al vincular sus aprendizajes con problemas reales de su entorno.</p>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                            <div class="accordion-body">
+                                                <p>Promoveremos la integración de áreas curriculares como Matemática, Comunicación, Ciencia y Tecnología, Personal Social, Formación Religiosa y Arte, abordando temas transversales como el cuidado del medioambiente, la salud, los valores y la ciudadanía activa. Esta estrategia busca que los estudiantes desarrollen un pensamiento crítico y reflexivo al vincular sus aprendizajes con problemas reales de su entorno.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                                        <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                            3.- Metodologías Activas y Participativas
-                                            <i class="fas fa-chevron-down ms-auto"></i>
-                                        </button>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                            <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                                3.- Metodologías Activas y Participativas
+                                                <i class="fas fa-chevron-down ms-auto"></i>
+                                            </button>
 
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingthree">
-                                        <div class="accordion-body">
-                                            <p> Aprendizaje Basado en Proyectos (ABP): Los estudiantes serán protagonistas de su aprendizaje, desarrollando habilidades de investigación, resolución de problemas y trabajo colaborativo. </p>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingthree">
+                                            <div class="accordion-body">
+                                                <p> Aprendizaje Basado en Proyectos (ABP): Los estudiantes serán protagonistas de su aprendizaje, desarrollando habilidades de investigación, resolución de problemas y trabajo colaborativo. </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                                        <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                                            4.- Uso del Juego y Experiencias Lúdicas
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                            <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                                4.- Uso del Juego y Experiencias Lúdicas
 
-                                            <i class="fas fa-chevron-down ms-auto"></i>
-                                        </button>
+                                                <i class="fas fa-chevron-down ms-auto"></i>
+                                            </button>
 
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
-                                        <div class="accordion-body">
-                                            <p> Incorporaremos el juego como un recurso pedagógico que motive la creatividad, fomente la cooperación y facilite la asimilación de valores y normas de convivencia. </p>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                                            <div class="accordion-body">
+                                                <p> Incorporaremos el juego como un recurso pedagógico que motive la creatividad, fomente la cooperación y facilite la asimilación de valores y normas de convivencia. </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-                                        <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                                            5.- Talleres y Actividades Dinámicas
-                                            <i class="fas fa-chevron-down ms-auto"></i>
-                                        </button>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                                            <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                                5.- Talleres y Actividades Dinámicas
+                                                <i class="fas fa-chevron-down ms-auto"></i>
+                                            </button>
 
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
-                                        <div class="accordion-body">
-                                            <p> Implementaremos espacios para el desarrollo de la creatividad y habilidades socioemocionales, fortaleciendo la autonomía y la capacidad de trabajo en equipo. </p>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                                            <div class="accordion-body">
+                                                <p> Implementaremos espacios para el desarrollo de la creatividad y habilidades socioemocionales, fortaleciendo la autonomía y la capacidad de trabajo en equipo. </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="panelsStayOpen-headingSix">
-                                        <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
-                                            6.- Fortalecimiento de la Psicomotricidad y Habilidades Básicas
-                                            <i class="fas fa-chevron-down ms-auto"></i>
-                                        </button>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                                            <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                                                6.- Fortalecimiento de la Psicomotricidad y Habilidades Básicas
+                                                <i class="fas fa-chevron-down ms-auto"></i>
+                                            </button>
 
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
-                                        <div class="accordion-body">
-                                            <p>Diseñaremos actividades específicas para estimular la motricidad fina y gruesa, necesarias para un adecuado desarrollo físico y cognitivo. Estas se integrarán a las diferentes áreas del currículo a través de la manipulación de materiales concretos y ejercicios dinámicos.</p>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                                            <div class="accordion-body">
+                                                <p>Diseñaremos actividades específicas para estimular la motricidad fina y gruesa, necesarias para un adecuado desarrollo físico y cognitivo. Estas se integrarán a las diferentes áreas del currículo a través de la manipulación de materiales concretos y ejercicios dinámicos.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
-                                        <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
-                                            7.- Fomento de Valores y Convivencia Escolar
-                                            <i class="fas fa-chevron-down ms-auto"></i>
-                                        </button>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                                            <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+                                                7.- Fomento de Valores y Convivencia Escolar
+                                                <i class="fas fa-chevron-down ms-auto"></i>
+                                            </button>
 
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
-                                        <div class="accordion-body">
-                                            <p> Enfatizaremos la importancia de valores como el respeto, la responsabilidad, la empatía y la solidaridad. Estas cualidades se trabajarán mediante actividades transversales y proyectos que promuevan una convivencia armónica y la construcción de una comunidad escolar inclusiva y tolerante. </p>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+                                            <div class="accordion-body">
+                                                <p> Enfatizaremos la importancia de valores como el respeto, la responsabilidad, la empatía y la solidaridad. Estas cualidades se trabajarán mediante actividades transversales y proyectos que promuevan una convivencia armónica y la construcción de una comunidad escolar inclusiva y tolerante. </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="panelsStayOpen-headingEight">
-                                        <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
-                                            8.- Uso de Recursos Tecnológicos
-                                            <i class="fas fa-chevron-down ms-auto"></i>
-                                        </button>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+                                            <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+                                                8.- Uso de Recursos Tecnológicos
+                                                <i class="fas fa-chevron-down ms-auto"></i>
+                                            </button>
 
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEight">
-                                        <div class="accordion-body">
-                                            <p> Integraremos herramientas digitales y recursos tecnológicos para enriquecer el proceso de enseñanza-aprendizaje, desarrollando competencias digitales en los estudiantes y preparándolos para los desafíos del siglo XXI. </p>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEight">
+                                            <div class="accordion-body">
+                                                <p> Integraremos herramientas digitales y recursos tecnológicos para enriquecer el proceso de enseñanza-aprendizaje, desarrollando competencias digitales en los estudiantes y preparándolos para los desafíos del siglo XXI. </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="panelsStayOpen-headingNine">
-                                        <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
-                                            9.- Participación de las Familias
-                                            <i class="fas fa-chevron-down ms-auto"></i>
-                                        </button>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+                                            <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+                                                9.- Participación de las Familias
+                                                <i class="fas fa-chevron-down ms-auto"></i>
+                                            </button>
 
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNine">
-                                        <div class="accordion-body">
-                                            <p> Reconocemos el papel fundamental de las familias en el desarrollo educativo de los estudiantes. Por ello, fomentaremos su participación activa a través de talleres, reuniones y proyectos compartidos, fortaleciendo la relación entre el hogar y la escuela.</p>
-                                            <p>Esta propuesta pedagógica está orientada a formar estudiantes autónomos, responsables y comprometidos con su aprendizaje, promoviendo su desarrollo integral y preparándolos para ser ciudadanos activos y conscientes de su entorno.</p>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNine">
+                                            <div class="accordion-body">
+                                                <p> Reconocemos el papel fundamental de las familias en el desarrollo educativo de los estudiantes. Por ello, fomentaremos su participación activa a través de talleres, reuniones y proyectos compartidos, fortaleciendo la relación entre el hogar y la escuela.</p>
+                                                <p>Esta propuesta pedagógica está orientada a formar estudiantes autónomos, responsables y comprometidos con su aprendizaje, promoviendo su desarrollo integral y preparándolos para ser ciudadanos activos y conscientes de su entorno.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1209,7 +1219,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 pt-5 px-5 ">
+                <div class="col-lg-6 pt-5 px-5 d-flex justify-content-center my-auto" style="position:relative;">
+                    <div style="z-index:99;">
+                        <img src="./public/img/web/foto_primaria.jpg" alt="" style="width:100%;border-radius:20px;">
+                    </div>
+                    <!--  <img src="./public/img/web/b-nosotros1.png" style="width:90%;z-index:99" alt=""> -->
+                    <!--  <div style="right:20%; bottom:1%; position:absolute;background-color: var(--color4);padding:1rem;z-index:99;border-radius:15px;">
+                        <center><i style="color:white;font-size:1.8rem;" class="far fa-check-circle"></i></center>
+                        <h4 style="color:white;"><span>+49 años</span></h4>
+                    </div> -->
+                    <img width="80" style="position:absolute;top:-1%;right:15%;z-index:1; animation: banner_animi_2 2s linear infinite alternate;" src="./public/img/icons/miselanea1.png" alt="">
+                    <img width="80" style="position:absolute;left:7%;bottom:15%;;z-index:1;animation: banner_animi_2 2s linear infinite alternate;" src="./public/img/icons/miselanea2.png" alt="">
+                </div>
+                <!-- <div class="col-lg-6 pt-5 px-5 ">
                     <div class="mx-5">
                         <div class="d-flex justify-content-center">
                             <img src="./public/img/web/foto_primaria.jpg" alt="" width="100%" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);border-radius: 2px;">
@@ -1218,11 +1240,11 @@
                     <div class="d-flex justify-content-center pt-5">
                         <img src="./public/img/icons/elemento2.png" width="100" style="animation: banner_animi_2 2s linear infinite alternate;" alt="">
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
-    
+
     <!-- <section id="niveles">
         <div class="container-fluid">
             <div class="row">

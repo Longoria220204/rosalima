@@ -191,13 +191,15 @@
 
         #slider-principal .titleC {
             position: absolute;
+            left: 19%;
+            top:40%;
             /* left: 14%; */
             display: flex;
             /* justify-content: center; */
             align-items: flex-end;
             /* height: 100%; */
-            padding-top: 20%;
-            padding-left: 15%;
+            /* padding-top: 20%;
+            padding-left: 15%; */
             width: 65%;
         }
 
@@ -882,6 +884,12 @@
                 font-size: 1rem;
                 /*  color: white;
             font-weight: 900; */
+            }
+        }
+        @media screen and (min-width:1100px) and (max-width:1600px) {
+            #slider-principal .titleC {
+                left: 14%;
+                top:30%;
             }
         }
     </style>

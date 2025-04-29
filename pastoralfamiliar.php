@@ -409,7 +409,7 @@
             /*  background-image: url('./public/img/web/fondo.png');
             background-repeat: no-repeat;
             background-size: 100% 600px;  */
-            padding-top: 3rem;
+            padding-top: 5rem;
 
             position: relative;
         }
@@ -420,8 +420,8 @@
 
         #bienvenidos .img-icon-bienvenido {
             position: absolute;
-            top: 10%;
-            left: 10%;
+            top: -7%;
+            left: -4%;
             animation: about_animi_1 40s linear infinite;
         }
 
@@ -543,12 +543,12 @@
 
         /* seccion publicaciones */
         #publicaciones {
-            padding-top: 4rem;
+            padding-top: 6rem;
             padding-bottom: 4rem;
         }
 
         #publicaciones h2 {
-            font-weight: 600;
+            font-weight: bold;
             color: var(--color1);
         }
 
@@ -693,66 +693,48 @@
             </div>
         </div>
     </div>
+
     <section id="bienvenidos">
-        <!-- <div class="container">
+        <div class="container">
             <div class="row">
-                <div class="content-bienvenidos">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="tf__breadcrumb_text">
-                                    <h1>Documentos</h1>
-                                    <div class="page_breadcrumb">
-                                        <nav aria-label="breadcrumb">
-                                            <ol class="breadcrumb">
-                                                <li class="breadcrumb-item"><a href="./">Inicio</a></li>
-                                                <li class="breadcrumb-item" style="color:var(--color4);font-weight:700;">Documentos</li>
-                                            </ol>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-lg-6 px-5 my-auto" style="position:relative;">
+                    <div class="mx-4">
+                        <div class="pt-5 ">
+                            <h2>Pastoral Familiar</h2>
                         </div>
+
+                        <div class=" py-2 pt-2">
+                            <p style="text-align:justify;">Para este año 2025 nuestro proyecto en familia <b>“Creciendo en fe”</b> que tiene como objetivo fortalecer la fe y los valores en nuestras familias, inspirándonos en el carisma dominico, y teniendo como guía a nuestro Padre Santo Domingo de Guzmán, que promueve la búsqueda de la verdad, la justicia y el servicio a los demás.</p>
+                            <p>
+                                Iniciamos el 2 de mayo y el programa consta de 8 encuentros.
+                            </p>
+
+                        </div>
+
                     </div>
+                    <img class="img-icon-bienvenido" src="./public/img/icons/miselanea4.png" alt="">
+                </div>
+                <div class="col-lg-6 pt-5 px-5 d-flex justify-content-center my-auto" style="position:relative;">
+                    <div style="z-index:99;">
+                        <img src="./public/img/web/pi_pastoral_familiar.jpeg" alt="" style="width:100%;border-radius:20px;">
+                    </div>
+                    <img width="80" style="position:absolute;top:-1%;right:15%;z-index:1; animation: banner_animi_2 2s linear infinite alternate;" src="./public/img/icons/miselanea1.png" alt="">
+                    <img width="80" style="position:absolute;left:1%;bottom:15%;;z-index:1;animation: banner_animi_2 2s linear infinite alternate;" src="./public/img/icons/miselanea2.png" alt="">
                 </div>
             </div>
         </div>
-        <img class="img-icon-bienvenido" src="./public/img/icons/miselanea4.png" alt=""> -->
+
     </section>
     <section id="publicaciones">
-        <div class="container" style="padding-left: 4%;padding-right:4%;">
-            <div class="row">
-                <div class="col-lg-6 pt-4 px-5 my-auto">
-                    <h2 style="color:black;">Pastoral Familiar</h2>
-                    <br>
-                    <p style="text-align:justify;">Para este año 2025 nuestro proyecto en familia <b>“Creciendo en fe”</b> que tiene como objetivo fortalecer la fe y los valores en nuestras familias, inspirándonos en el carisma dominico, y teniendo como guía a nuestro Padre Santo Domingo de Guzmán, que promueve la búsqueda de la verdad, la justicia y el servicio a los demás.</p>
-                    <p>
-                        Iniciamos el 2 de mayo y el programa consta de 8 encuentros.
-                    </p>
-                </div>
-                <div class="col-lg-6 pt-5 px-5 d-flex justify-content-center" style="position:relative;">
-                    <div style="z-index:99;">
-                        <center><img src="./public/img/web/pi_pastoral_familiar.jpeg" style="border-radius: 15px;" alt=""></center>
-                    </div>
-                    <!--  <img src="./public/img/web/b-nosotros1.png" style="width:90%;z-index:99" alt=""> -->
-                    <!--  <div style="right:20%; bottom:1%; position:absolute;background-color: var(--color4);padding:1rem;z-index:99;border-radius:15px;">
-                        <center><i style="color:white;font-size:1.8rem;" class="far fa-check-circle"></i></center>
-                        <h4 style="color:white;"><span>+49 años</span></h4>
-                    </div> -->
-                    <!-- <img width="80" style="position:absolute;top:-2%;right:15%;z-index:1; animation: banner_animi_2 2s linear infinite alternate;" src="./public/img/icons/miselanea1.png" alt="">
-                    <img width="80" style="position:absolute;left:14%;bottom:15%;;z-index:1;animation: banner_animi_2 2s linear infinite alternate;" src="./public/img/icons/miselanea2.png" alt="">
-                </div> -->
-                </div>
-            </div>
-        </div>
+
         <br>
         <br>
         <div class="container-fluid " style="padding-left: 4%;padding-right:4%;">
-            <!--  <div class="row">
+            <div class="row">
                 <div class="col-lg">
                     <h2 style="color:var(--color6);text-align:center;">Publicaciones</h2>
                 </div>
-            </div> -->
+            </div>
 
             <br>
             <div class="row noticias d-flex justify-content-center">

@@ -705,6 +705,10 @@
             color: var(--color7);
             text-align: justify;
         }
+        .img-mision-vision{
+            height: 100%;
+            object-fit: cover;
+        }
 
         @media screen and (max-width:700px) {
             #portada {
@@ -753,7 +757,7 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.php" style="color:white;">Inicio</a></li>
-                                <li class="breadcrumb-item text-white">Niveles</li>
+                                <li class="breadcrumb-item text-white">Nosotros</li>
                             </ol>
                         </nav>
                     </div>
@@ -1032,7 +1036,7 @@
                 <div class="col-lg content-mision-vision" style="background-color: var(--color3);">
                     <div class="row d-flex justify-content-around">
                         <div class="col-lg-4 p-3 ">
-                            <img src="./public/img/web/nosotros_mision.jpg" width="100%" style="border-radius: 10px;" alt="">
+                            <img class="img-mision-vision" src="./public/img/web/nosotros_mision.jpg" width="100%" style="border-radius: 10px;" alt="">
                         </div>
                         <div class="col-lg-8 my-auto p-5">
                             <h3>Misión</h3>
@@ -1049,7 +1053,7 @@
                 <div class="col-lg content-mision-vision" style=" background-color: var(--color4);">
                     <div class="row d-flex justify-content-around">
                         <div class="col-lg-4 p-3 ">
-                            <img src="./public/img/web/nosotros_vision.jpg" width="100%" style="border-radius: 10px;" alt="">
+                            <img class="img-mision-vision" src="./public/img/web/nosotros_vision.jpg" width="100%" style="border-radius: 10px;" alt="">
                         </div>
                         <div class="col-lg-8 my-auto p-5">
                             <h3>Visión</h3>

@@ -205,21 +205,22 @@
             padding-top: 5rem;
             padding-bottom: 5rem;
         }
-        #valores  .owl-theme .owl-dots .owl-dot span {
+
+        #valores .owl-theme .owl-dots .owl-dot span {
             width: 30px;
         }
 
-        #valores  .owl-theme .owl-dots .owl-dot.active span {
+        #valores .owl-theme .owl-dots .owl-dot.active span {
             /* background-color: red; */
             width: 50px;
         }
 
-        #valores  .owl-theme .owl-dots .owl-dot.active span,
-        #valores  .owl-theme .owl-dots .owl-dot:hover span {
+        #valores .owl-theme .owl-dots .owl-dot.active span,
+        #valores .owl-theme .owl-dots .owl-dot:hover span {
             background-color: var(--color8);
         }
 
-        #valores  .owl-nav button {
+        #valores .owl-nav button {
             background: var(--color4) !important;
             /* Color del fondo del botón */
             border: none !important;
@@ -469,13 +470,14 @@
 
         #bienvenidos {
             /* position: relative; */
+            padding-top: 5rem !important;
             background-image: url('./public/img/web/fondo2.png');
             background-repeat: no-repeat;
             background-size: 140%;
             background-position: bottom;
             /*  padding-top: 8rem;*/
             position: relative;
-            padding-bottom: 4rem !important;
+            padding-bottom: 6rem !important;
             /* margin-bottom: 3rem; */
         }
 
@@ -794,6 +796,7 @@
 
             width: 25% !important;
         }
+
         .content1 h3 {
             padding-top: 2rem !important;
         }
@@ -945,6 +948,7 @@
     </div>
     <section id="bienvenidos">
         <div class="container">
+            <!-- <div class="container-fluid" style="padding-left: 10%;padding-right: 10%;"> -->
             <!-- <div class="content-bienvenidos">
                 <div class="container">
                     <div class="row">
@@ -966,9 +970,8 @@
                     </div>
                 </div>
             </div> -->
-            <div class="row">
-                <div class="d-felx justify-content-center pt-5">
-                    <!-- <img class="img-icon-bienvenido" src="./public/img/icons/miselanea3.png" alt="">   -->
+            <!-- <div class="row d-flex justify-content-center pt-5">
+                <div class="">
                     <div class="pt-5 ">
                         <h2>Nivel Inicial</h2>
                     </div>
@@ -976,85 +979,105 @@
                         <h3>Propuesta Pedagógica para el Nivel Inicial</h3>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="row">
                 <div class="col-lg-6 px-5" style="position:relative;">
-                    <div class=" py-2 pt-5">
-                        <p>Reconociendo la importancia de contextualizar el proceso de enseñanza-aprendizaje en el nivel inicial, y en el marco del Currículo Nacional de la Educación Básica, nuestra propuesta busca diversificar los desempeños en las cuatro áreas principales del plan de estudios, integrándolos dentro del plan anual y las unidades didácticas (aprendizajes, proyectos y módulos).</p>
-                        <br>
-                        <p>De manera específica, implementaremos las siguientes estrategias:</p>
-                        </p>
+                    <div class="mx-4">
+                        <div class="pt-5 ">
+                            <h2>Nivel Inicial</h2>
+                        </div>
+                        <div class="pt-5 ">
+                            <h3>Propuesta Pedagógica para el Nivel Inicial</h3>
+                        </div>
+                        <div class=" py-2 pt-5">
+                            <p>Reconociendo la importancia de contextualizar el proceso de enseñanza-aprendizaje en el nivel inicial, y en el marco del Currículo Nacional de la Educación Básica, nuestra propuesta busca diversificar los desempeños en las cuatro áreas principales del plan de estudios, integrándolos dentro del plan anual y las unidades didácticas (aprendizajes, proyectos y módulos).</p>
+                            <br>
+                            <p>De manera específica, implementaremos las siguientes estrategias:</p>
+                            </p>
 
-                        <!-- <video src="./public/video-web/interno_inicial.mp4" controls autoplay width="50%" muted style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); border-radius: 8px;"></video> -->
-                    </div>
-                    <div class="row">
-                        <div class="col-lg col-md my-auto" id="info">
-                            <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <!-- <video src="./public/video-web/interno_inicial.mp4" controls autoplay width="50%" muted style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); border-radius: 8px;"></video> -->
+                        </div>
+                        <div class="row">
+                            <div class="col-lg col-md my-auto" id="info">
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
 
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                        <button class="accordion-button d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                            1.- Integración de las Áreas Curriculares
-                                            <i class="fas fa-chevron-down ms-auto"></i>
-                                        </button>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                            <button class="accordion-button d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                                1.- Integración de las Áreas Curriculares
+                                                <i class="fas fa-chevron-down ms-auto"></i>
+                                            </button>
 
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-                                        <div class="accordion-body">
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                                            <div class="accordion-body">
 
-                                            <p>Las áreas de Psicomotricidad, Matemática, Comunicación, Personal Social, Ciencia y Tecnología y Formación Religiosa se abordarán de manera integrada, promoviendo el desarrollo de capacidades de investigación y toma de decisiones en los estudiantes. Esta estrategia estará orientada a temas contextualizados en la problemática del entorno, como el cuidado del medioambiente, la salud y el desarrollo de valores.</p>
-                                            <p>Fomentaremos la participación activa de los estudiantes en la construcción de sus aprendizajes.
-                                                Involucraremos a los padres de familia como aliados clave en el proceso educativo, promoviendo su acompañamiento en el aprendizaje de sus hijos e hijas.
-                                            </p>
+                                                <p>Las áreas de Psicomotricidad, Matemática, Comunicación, Personal Social, Ciencia y Tecnología y Formación Religiosa se abordarán de manera integrada, promoviendo el desarrollo de capacidades de investigación y toma de decisiones en los estudiantes. Esta estrategia estará orientada a temas contextualizados en la problemática del entorno, como el cuidado del medioambiente, la salud y el desarrollo de valores.</p>
+                                                <p>Fomentaremos la participación activa de los estudiantes en la construcción de sus aprendizajes.
+                                                    Involucraremos a los padres de familia como aliados clave en el proceso educativo, promoviendo su acompañamiento en el aprendizaje de sus hijos e hijas.
+                                                </p>
 
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                            <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                                2.- Desarrollo de la Psicomotricidad Fina
+                                                <i class="fas fa-chevron-down ms-auto"></i>
+                                            </button>
+
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                            <div class="accordion-body">
+                                                <p>Potenciaremos las habilidades motoras finas a través de la manipulación de materiales concretos. Esta práctica se integrará de manera constante en todas las áreas curriculares, favoreciendo la coordinación y precisión en los estudiantes.
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                            <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                                3.- El Juego como Herramienta Pedagógica
+                                                <i class="fas fa-chevron-down ms-auto"></i>
+                                            </button>
+
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingthree">
+                                            <div class="accordion-body">
+                                                <p> Incorporaremos el juego de forma permanente en las actividades pedagógicas, proponiendo situaciones de aprendizaje motivadoras que estimulen: </p>
+                                                <p><b>Creatividad:</b> Exploración y generación de ideas originales.
+                                                    Autonomía: Desarrollo de la capacidad de resolver problemas de manera independiente.
+                                                </p>
+                                                <p><b>Autonomía:</b> Desarrollo de la capacidad de resolver problemas de manera independiente.</p>
+                                                <p><b>Cooperación y trabajo en equipo: </b> Creación de espacios para la interacción y colaboración entre los estudiantes.</p>
+                                                <p><b>Asimilación de normas y valores:</b> Aprendizaje dinámico y divertido que refuerce principios como el respeto, la solidaridad y la responsabilidad.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                        <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                            2.- Desarrollo de la Psicomotricidad Fina
-                                            <i class="fas fa-chevron-down ms-auto"></i>
-                                        </button>
-
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                                        <div class="accordion-body">
-                                            <p>Potenciaremos las habilidades motoras finas a través de la manipulación de materiales concretos. Esta práctica se integrará de manera constante en todas las áreas curriculares, favoreciendo la coordinación y precisión en los estudiantes.
-
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                                        <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                            3.- El Juego como Herramienta Pedagógica
-                                            <i class="fas fa-chevron-down ms-auto"></i>
-                                        </button>
-
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingthree">
-                                        <div class="accordion-body">
-                                            <p> Incorporaremos el juego de forma permanente en las actividades pedagógicas, proponiendo situaciones de aprendizaje motivadoras que estimulen: </p>
-                                            <p><b>Creatividad:</b> Exploración y generación de ideas originales.
-                                                Autonomía: Desarrollo de la capacidad de resolver problemas de manera independiente.
-                                            </p>
-                                            <p><b>Autonomía:</b> Desarrollo de la capacidad de resolver problemas de manera independiente.</p>
-                                            <p><b>Cooperación y trabajo en equipo: </b> Creación de espacios para la interacción y colaboración entre los estudiantes.</p>
-                                            <p><b>Asimilación de normas y valores:</b> Aprendizaje dinámico y divertido que refuerce principios como el respeto, la solidaridad y la responsabilidad.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 pt-5 px-5 ">
+                <div class="col-lg-6 pt-5 px-5 d-flex justify-content-center my-auto" style="position:relative;">
+                    <div style="z-index:99;">
+                        <img src="./public/img/web/rosa_inicial.jpg" alt="" style="width:100%;border-radius:20px;">
+                    </div>
+                    <!--  <img src="./public/img/web/b-nosotros1.png" style="width:90%;z-index:99" alt=""> -->
+                    <!--  <div style="right:20%; bottom:1%; position:absolute;background-color: var(--color4);padding:1rem;z-index:99;border-radius:15px;">
+                        <center><i style="color:white;font-size:1.8rem;" class="far fa-check-circle"></i></center>
+                        <h4 style="color:white;"><span>+49 años</span></h4>
+                    </div> -->
+                    <img width="80" style="position:absolute;top:-1%;right:15%;z-index:1; animation: banner_animi_2 2s linear infinite alternate;" src="./public/img/icons/miselanea1.png" alt="">
+                    <img width="80" style="position:absolute;left:1%;bottom:15%;;z-index:1;animation: banner_animi_2 2s linear infinite alternate;" src="./public/img/icons/miselanea2.png" alt="">
+                </div>
+                <!-- <div class="col-lg-6 pt-5 px-5 ">
                     <div class="mx-5">
                         <div class="d-flex justify-content-center">
                             <img src="./public/img/web/rosa_inicial.jpg" alt="" width="100%" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);border-radius: 2px;">
@@ -1063,13 +1086,13 @@
                     <div class="d-flex justify-content-center pt-5">
                         <img src="./public/img/icons/elemento2.png" width="100" style="animation: banner_animi_2 2s linear infinite alternate;" alt="">
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
         <!-- <img class="img-icon-bienvenido" src="./public/img/icons/miselanea3.png" alt=""> -->
     </section>
-    
+
     <!-- <section id="niveles">
         <div class="container-fluid">
             <div class="row">
@@ -1130,7 +1153,7 @@
                 <div class="owl-carousel owl-theme" id="owl-noticias">
                     <div class="col-12 col-md p-md-4 my-3 my-md-0 item ">
                         <div class="content1 ">
-                             <center><img src="./public/img/icons/matematica.png" alt=""></center>
+                            <center><img src="./public/img/icons/matematica.png" alt=""></center>
                             <h3>MATEMATICA</h3>
                         </div>
                     </div>
@@ -1148,13 +1171,13 @@
                     </div>
                     <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
                         <div class="content1">
-                             <center><img src="./public/img/icons/ciencia-tecnologia.png" alt=""></center>
+                            <center><img src="./public/img/icons/ciencia-tecnologia.png" alt=""></center>
                             <h3>CIENCIA Y TECNOLOGIA</h3>
                         </div>
                     </div>
                     <div class="col-12 col-md p-md-4 my-3 my-md-0 item">
                         <div class="content1">
-                             <center><img src="./public/img/icons/educacion-religiosa.png" alt=""></center>
+                            <center><img src="./public/img/icons/educacion-religiosa.png" alt=""></center>
                             <h3>FORMACIÓN RELIGIOSA</h3>
                         </div>
                     </div>
