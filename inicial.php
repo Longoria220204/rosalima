@@ -1145,7 +1145,7 @@
         <div class="container-fluid " style="padding-left: 4%;padding-right:4%;">
             <div class="row">
                 <div class="col-lg">
-                    <h2>Listado de Cursos</h2>
+                    <h2>Listado de Áreas</h2>
                 </div>
             </div>
             <br>

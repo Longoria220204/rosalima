@@ -361,7 +361,7 @@
                 </div>
 
                 <div class="d-flex text-white my-3" style="align-items: center;">
-                    <span style="width: 10px; text-align: center;font-family: 'Mulish', sans-serif;"><i class="fas fa-phone-alt" style="color:var(--color7);"></i><a href="tel:+51989443819"></span>
+                    <span style="width: 10px; text-align: center;font-family: 'Mulish', sans-serif;"><i class="fas fa-phone-alt" style="color:var(--color7);"></i><a href="tel:+51940662564"></span>
                     <span class="ms-4">940662564</span></a>
 
                 </div>
@@ -415,7 +415,7 @@
     </div>
 </footer>
 <div class="bar-inf2" style="position: fixed; bottom: 60px; right: 20px; z-index: 999;">
-    <a href="https://wa.me/+51989443819?text=Hola,%20estoy%20en%20la%20Web%20del%20Colegio%20Rosa%20de%20Lima%20y%20quiero%20consultar%20sobre" target="_blank" class="text-success">
+    <a href="https://wa.me/+51940662564?text=Hola,%20estoy%20en%20la%20Web%20del%20Colegio%20Rosa%20de%20Lima%20y%20quiero%20consultar%20sobre" target="_blank" class="text-success">
         <!-- <span class="py-2 px-3 border bg-light rounded">¿Necesita ayuda?</span> -->
         <img src="./public/img/icons/whatsapp.png" width="60" class="ms-2">
     </a>

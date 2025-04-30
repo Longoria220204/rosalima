@@ -904,7 +904,7 @@
                         <div id="img-elemento2"><img src="./public/img/icons/elemento2.png" alt=""></div>
                         <div class="titleC overlay">
                             <div>
-                                <h2 class="title">¡Bienvenidos al colegio<br>
+                                <h2 class="title">¡Bienvenidos al la I. E. P. <br>
                                     <span style="color:var(--color3);text-decoration: underline;">Rosa de Lima !</span>
                                 </h2>
                                 <br>
@@ -956,7 +956,7 @@
                     <img class="img-icon-bienvenido" src="./public/img/icons/miselanea4.png" alt="">
                 </div>
                 <div class="col-lg-6 pt-5 px-5 d-flex justify-content-center" style="position:relative;">
-                    <img src="./public/img/web/rosa_inicio.png" style="width:80%;z-index:99" alt="">
+                    <img src="./public/img/web/bienviendos_rosadelima.jpg" style="width:80%;z-index:99" alt="">
                     <div style="right:20%; bottom:1%; position:absolute;background-color: var(--color4);padding:1rem;z-index:99;border-radius:15px;">
                         <center><i style="color:white;font-size:1.8rem;" class="far fa-check-circle"></i></center>
                         <h4 style="color:white;"><span>+36 años</span></h4>

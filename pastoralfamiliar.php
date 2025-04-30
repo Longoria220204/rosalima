@@ -716,7 +716,7 @@
                 </div>
                 <div class="col-lg-6 pt-5 px-5 d-flex justify-content-center my-auto" style="position:relative;">
                     <div style="z-index:99;">
-                        <img src="./public/img/web/pi_pastoral_familiar.jpeg" alt="" style="width:100%;border-radius:20px;">
+                        <img src="./public/img/web/foto_familiar.jpg" alt="" style="width:100%;border-radius:20px;">
                     </div>
                     <img width="80" style="position:absolute;top:-1%;right:15%;z-index:1; animation: banner_animi_2 2s linear infinite alternate;" src="./public/img/icons/miselanea1.png" alt="">
                     <img width="80" style="position:absolute;left:1%;bottom:15%;;z-index:1;animation: banner_animi_2 2s linear infinite alternate;" src="./public/img/icons/miselanea2.png" alt="">

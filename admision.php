@@ -727,10 +727,10 @@
             <br>
             <div class="row noticias">
                 <div class="col-12 col-md-4 p-md-4 my-3 my-md-0 item">
-                    <a href="view.php?id=6">
+                    <a href="view.php?id=7">
                         <div class="card shadow" style="border-radius:5px;">
                             <div class="card1">
-                                <img src="./public/img/galeria/p_ficha_familiar.jpg" alt="">
+                                <img src="./public/img/galeria/admision_2026.jpg" alt="">
                             </div>
                             <div class="cardbody1 mx-3 py-3">
                                 <div class="fecha-pub pb-1 d-flex justify-content-between">
@@ -739,10 +739,12 @@
                                 </div>
                                 <br>
                                 <div class="titulo">
-                                    <h5>FICHA FAMILIAR DEL POSTULANTE 2025</h5>
+                                    <h5>PROCESO DE ADMISION 2026</h5>
                                 </div>
                                 <div class="detalle">
-                                    <p>El Colegio Rosa de Lima, comprometido con una educación integral y personalizada, requiere la presentación de la Ficha Familiar como parte esencial del proceso de admisión.</p>
+                                    <p>Nuestra institución ha implementado el PROCESO DE ADMISIÓN 2026 – 2027 para las familias que desean acceder a una
+                                        vacante para el nivel inicial (3, 4 y 5 años) y Nivel Primaria.
+                                    </p>
                                 </div>
 
                             </div>
@@ -754,6 +756,7 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="col-12 col-md-4 p-md-4 my-3 my-md-0 item">
                     <a href="view.php?id=5">
                         <div class="card shadow" style="border-radius:5px;">
@@ -894,6 +897,36 @@
                             </div>
                         </div>
                     </a>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-4 p-md-4 my-3 my-md-0 item">
+                        <a href="view.php?id=6">
+                            <div class="card shadow" style="border-radius:5px;">
+                                <div class="card1">
+                                    <img src="./public/img/galeria/p_ficha_familiar.jpg" alt="">
+                                </div>
+                                <div class="cardbody1 mx-3 py-3">
+                                    <div class="fecha-pub pb-1 d-flex justify-content-between">
+                                        <div style="background-color:var(--color4);color:white;border-radius:5px;padding:.3rem;"><span>Admisión</span></div>
+                                        <p class="my-auto"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;10-01-2025</p>
+                                    </div>
+                                    <br>
+                                    <div class="titulo">
+                                        <h5>FICHA FAMILIAR DEL POSTULANTE 2025</h5>
+                                    </div>
+                                    <div class="detalle">
+                                        <p>El Colegio Rosa de Lima, comprometido con una educación integral y personalizada, requiere la presentación de la Ficha Familiar como parte esencial del proceso de admisión.</p>
+                                    </div>
+
+                                </div>
+                                <div class="card-footer">
+                                    <div class="pub-leer-mas">
+                                        <h5>Leer Más&nbsp;&nbsp;<i class="fas fa-chevron-circle-right"></i></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
 

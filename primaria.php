@@ -37,9 +37,9 @@
     <style>
         #portada {
             background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-                url('./public/img/web/banner_primaria.jpg');
+                url('./public/img/web/newbanner_primaria.jpg');
             background-size: cover;
-            background-position: center 30%;
+            background-position: center 60%;
             /*   padding: 550px 0 10px; */
             position: relative;
         }
@@ -1299,7 +1299,7 @@
         <div class="container-fluid " style="padding-left: 4%;padding-right:4%;">
             <div class="row">
                 <div class="col-lg">
-                    <h2>Listado de Cursos</h2>
+                    <h2>Listado de Áreas</h2>
                 </div>
             </div>
             <br>
