@@ -956,7 +956,7 @@
                     <img class="img-icon-bienvenido" src="./public/img/icons/miselanea4.png" alt="">
                 </div>
                 <div class="col-lg-6 pt-5 px-5 d-flex justify-content-center" style="position:relative;">
-                    <img src="./public/img/web/bienviendos_rosadelimav2.png" style="width:80%;z-index:99" alt="">
+                    <img src="./public/img/web/bienviendos_rosadelimav2.png" style="width:80%;z-index:99;object-fit:cover;" alt="">
                     <div style="right:20%; bottom:1%; position:absolute;background-color: var(--color4);padding:1rem;z-index:99;border-radius:15px;">
                         <center><i style="color:white;font-size:1.8rem;" class="far fa-check-circle"></i></center>
                         <h4 style="color:white;"><span>+36 años</span></h4>
